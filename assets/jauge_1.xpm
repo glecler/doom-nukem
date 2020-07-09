@@ -1,0 +1,36 @@
+/* XPM */
+static char *_dde18d0e4cd4612e17fea53257d49b5Vg0Vqn5PY2RNy8oc[] = {
+/* columns rows colors chars-per-pixel */
+"156 26 4 1 ",
+"  c None",
+". c #FFFFFF",
+"X c #EC1C24",
+"o c #C3C3C3",
+/* pixels */
+"               ............................................................................................................................................ ",
+"              .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo. ",
+"              .XXXXXXXXXXXXXXXXXXXXXXXXXXX.oooooooooooooooooooooooooo.oooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooo.  ",
+"             .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.  ",
+"            .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooooo.oooooooooooooooooooooooooo.   ",
+"            .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.   ",
+"           .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.    ",
+"           .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooo.     ",
+"          .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.     ",
+"          .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.      ",
+"         .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.      ",
+"        .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.       ",
+"        .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooo.        ",
+"       .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.        ",
+"       .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.         ",
+"      .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.         ",
+"      .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.          ",
+"     .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooo.           ",
+"     .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.           ",
+"    .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.            ",
+"   .XXXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooo.             ",
+"   .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.             ",
+"  .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.oooooooooooooooooooooooooooo.oooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.              ",
+"  .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.              ",
+" .XXXXXXXXXXXXXXXXXXXXXXXXXX.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.ooooooooooooooooooooooooooo.               ",
+" ............................................................................................................................................               "
+};

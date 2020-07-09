@@ -1,0 +1,190 @@
+mtllib vase.mtl
+spawn 100 70 100
+
+v 25 2 130
+v 25 22 130
+v 28 2 42
+v 28 22 42
+v 162 2 38
+v 162 22 38
+v 164 2 129
+v 164 22 129
+v 122 2 129
+v 122 22 129
+v 75 2 129
+v 75 22 129
+v 65 45 99
+v 65 65 99
+v 65 33 62
+v 65 53 62
+v 117 35 60
+v 117 55 60
+v 118 42 94
+v 118 62 94
+vt 0 0
+vt 0 1
+vt 1 0
+vt 1 1
+o newobject
+usemtl proto_vio_trans.xpm
+f 1/2 4/3 3/4
+f 1/2 2/1 4/3
+f 3/4 4/3 1/2
+f 4/3 2/1 1/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 3/2 6/3 5/4
+f 3/2 4/1 6/3
+f 5/4 6/3 3/2
+f 6/3 4/1 3/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 5/2 8/3 7/4
+f 5/2 6/1 8/3
+f 7/4 8/3 5/2
+f 8/3 6/1 5/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 7/2 10/3 9/4
+f 7/2 8/1 10/3
+f 9/4 10/3 7/2
+f 10/3 8/1 7/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 11/2 2/3 1/4
+f 11/2 12/1 2/3
+f 1/4 2/3 11/2
+f 2/3 12/1 11/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 13/2 16/3 15/4
+f 13/2 14/1 16/3
+f 15/4 16/3 13/2
+f 16/3 14/1 13/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 15/2 18/3 17/4
+f 15/2 16/1 18/3
+f 17/4 18/3 15/2
+f 18/3 16/1 15/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 17/2 20/3 19/4
+f 17/2 18/1 20/3
+f 19/4 20/3 17/2
+f 20/3 18/1 17/2
+o newobject
+usemtl proto_vio_trans.xpm
+f 19/2 14/3 13/4
+f 19/2 20/1 14/3
+f 13/4 14/3 19/2
+f 14/3 20/1 19/2
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 3/2 15/3
+f 15/3 3/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 11/2 9/3
+f 9/3 11/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 11/2 19/3
+f 19/3 11/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 13/2 15/3
+f 15/3 13/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 13/2 19/3
+f 19/3 13/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 7/2 9/3
+f 9/3 7/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 7/2 19/3
+f 19/3 7/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 1/1 9/2 19/3
+f 19/3 9/2 1/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 3/1 5/2 17/3
+f 17/3 5/2 3/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 3/1 15/2 17/3
+f 17/3 15/2 3/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 5/1 7/2 19/3
+f 19/3 7/2 5/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 5/1 17/2 19/3
+f 19/3 17/2 5/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 7/1 9/2 19/3
+f 19/3 9/2 7/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 9/1 11/2 19/3
+f 19/3 11/2 9/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 13/1 15/2 17/3
+f 17/3 15/2 13/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 13/1 19/2 17/3
+f 17/3 19/2 13/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 14/1 16/2 18/3
+f 18/3 16/2 14/1
+o newobject
+usemtl proto_ora.xpm
+id 7
+f 14/1 20/2 18/3
+f 18/3 20/2 14/1
+
+usemtl fin.xpm
+usemtl orbe.xpm
+usemtl orbe_grise.xpm
+usemtl tableau.xpm
+usemtl tableau.xpm
+usemtl portal.xpm
+usemtl proto_vert.xpm
+usemtl g_talk.xpm
+usemtl weapon.xpm
+usemtl laser.xpm
+usemtl jauge_5.xpm
+usemtl jauge_4.xpm
+usemtl jauge_3.xpm
+usemtl jauge_2.xpm
+usemtl jauge_1.xpm
+usemtl jauge_0.xpm
+usemtl jauge.xpm
+usemtl none.xpm
