@@ -54,6 +54,13 @@ int ft_get_mouse(int button, int x, int y, t_editor_data *e_data)
     return (0);
 }
 
+int		ft_get_key(int key, t_editor_data *e_data)
+{
+	if (key == 53)
+		exit(0);
+	return(0);
+}
+
 int ft_get_motion(int x, int y, t_editor_data *e_data)
 {
     if (e_data->mode == DRAW_FLOOR)

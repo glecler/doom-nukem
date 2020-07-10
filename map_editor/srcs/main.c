@@ -16,6 +16,7 @@ int ft_map_edit(t_win_data *w_data, t_list *list)
         w_data->ux_textures[0].img_ptr, 0, 0);
     mlx_mouse_hook(w_data->win_ptr, &ft_get_mouse, &editor_data);
     mlx_hook(w_data->win_ptr, 6, (1L << 6), &ft_get_motion, &editor_data);
+    //mlx_key_hook(key, &editor_data);
     mlx_loop(w_data->mlx_ptr);
     return (0);
 }

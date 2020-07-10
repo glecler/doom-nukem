@@ -23,15 +23,15 @@ int ft_init_textures(t_win_data *w_data)
     w = 0;
     h = 0;
     (w_data->ux_textures[0]).img_ptr = mlx_xpm_file_to_image(w_data->mlx_ptr,
-        "./assets/toolbar.xpm", &w, &h);
+        "./map_editor//assets/toolbar.xpm", &w, &h);
     (w_data->ux_textures[1]).img_ptr = mlx_xpm_file_to_image(w_data->mlx_ptr,
-        "./assets/file.xpm", &w, &h);
+        "./map_editor/assets/file.xpm", &w, &h);
     (w_data->ux_textures[2]).img_ptr = mlx_xpm_file_to_image(w_data->mlx_ptr,
-        "./assets/draw.xpm", &w, &h);
+        "./map_editor/assets/draw.xpm", &w, &h);
     (w_data->ux_textures[3]).img_ptr = mlx_xpm_file_to_image(w_data->mlx_ptr,
-        "./assets/link.xpm", &w, &h);
+        "./map_editor/assets/link.xpm", &w, &h);
     (w_data->ux_textures[4]).img_ptr = mlx_xpm_file_to_image(w_data->mlx_ptr,
-        "./assets/tools.xpm", &w, &h);
+        "./map_editor/assets/tools.xpm", &w, &h);
     if (!((w_data->ux_textures[0]).img_ptr) || !((w_data->ux_textures[1]).img_ptr)
         || !((w_data->ux_textures[2]).img_ptr) || !(w_data->ux_textures[3].img_ptr
             || !(w_data->ux_textures[4].img_ptr)))

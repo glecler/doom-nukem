@@ -107,16 +107,34 @@ void   physic(t_env *env, t_move *move, const Uint8 *keys)
 		{
 			if (collide(env, vec_sub(env->vcamera, vforward), move->flag, 0) == 0)
 				env->vcamera = vec_sub(env->vcamera, vforward);
+			else
+			{
+				env->vcamera.y += 0.3f;
+				if (collide(env, vec_add(env->vcamera, vforward), move->flag, 0) == 0)
+					env->vcamera = vec_add(env->vcamera, vforward);
+			}
 		}
 		if (keys[SDL_SCANCODE_A] == 1)
 		{
 			if (collide(env, vec_add(env->vcamera, vright), move->flag, 0) == 0)
 				env->vcamera = vec_add(env->vcamera, vright);
+			else
+			{
+				env->vcamera.y += 0.3f;
+				if (collide(env, vec_add(env->vcamera, vforward), move->flag, 0) == 0)
+					env->vcamera = vec_add(env->vcamera, vforward);
+			}
 		}
 		if (keys[SDL_SCANCODE_D] == 1)
 		{
 			if (collide(env, vec_sub(env->vcamera, vright), move->flag, 0) == 0)
 				env->vcamera = vec_sub(env->vcamera, vright);
+			else
+			{
+				env->vcamera.y += 0.3f;
+				if (collide(env, vec_add(env->vcamera, vforward), move->flag, 0) == 0)
+					env->vcamera = vec_add(env->vcamera, vforward);
+			}
 		}
 	}
 }

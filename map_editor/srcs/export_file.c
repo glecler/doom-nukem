@@ -37,6 +37,7 @@ char *ft_export_walls(t_editor_data *e_data, char *data)
         {
             data = ft_strjoin(data, "o newobject\n");
             data = ft_strjoin(data, "usemtl proto_vio_trans.xpm\n");
+            data = ft_strjoin(data, "id 8\n");
             data = ft_strjoin(data, "f ");
             data = ft_strjoin(data, ft_itoa(link_buff->link.node_a->no));
             data = ft_strjoin(data, "/2 ");

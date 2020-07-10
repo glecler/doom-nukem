@@ -88,8 +88,6 @@ int check_slope(t_env *env, t_vec3d cam, int flag, t_obb obb)
     i = obb.first;
     while (i <= obb.last)
     {
-		printf("i %d\n", i);
-		printf("retarded shit\n");
 		triangles[0].p[0] = env->tri[i].p[0];
     	triangles[0].p[1] = env->tri[i].p[1];
     	triangles[0].p[2] = cam;
@@ -101,15 +99,8 @@ int check_slope(t_env *env, t_vec3d cam, int flag, t_obb obb)
     	triangles[2].p[2] = cam;
 		big_area = ft_get_area_3_triangles(triangles);
 		area = ft_get_area_triangles(env->tri[i]);
-		printf("get area 3 tri  %f\n", big_area);
-		printf("get area tri  %f\n\n", area);
-		printf("get area tri  %f\n\n", area + (10 * area / 100));
-        if (big_area > area && big_area < (area + (10 * area / 100)))
-	    {
-			//env->vcamera.y += 0.4f;
-			printf("FDP FP FDP FDP FDPF FDPF DPFDPF D\n");
+        if (big_area > area && big_area < (area + (20 * area / 100)))
 			return (1);
-		}
 		i++;
     }
     return (0);
@@ -156,7 +147,7 @@ int collide(t_env *env, t_vec3d cam, int flag, float speed)
 			}
 			else if (env->obb[i].id == 6 && env->end >= 7) //hitbox portal degeu
 				env->fin = 1;
-			if (env->obb[i].id != 7)
+			if (env->obb[i].id != 7 && env->obb[i].id != 8)
 			{
 				free(data_vec);
 				return(1);
@@ -166,6 +157,14 @@ int collide(t_env *env, t_vec3d cam, int flag, float speed)
 				if (check_slope(env, cam, flag, env->obb[i]) == 1)
 				{
 					//env->vcamera.y += 0.07f;
+					return(1);
+				}
+			}
+			if (env->obb[i].id == 8)
+			{
+				if (check_slope(env, cam, flag, env->obb[i]) == 1)
+				{
+					//env->vcamera.y -= 0.3f;
 					return(1);
 				}
 			}
