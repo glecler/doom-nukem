@@ -1,6 +1,6 @@
 #include "../includes/doom_editor.h"
 
-int ft_display_map(t_editor_data *e_data)
+int ft_display_map(t_e_data *e_data)
 {
 	ft_draw_axis(e_data->win_data->addr,
 		e_data->win_data->green, e_data->win_data->size_line);
@@ -33,7 +33,7 @@ int ft_set_rgb_type(unsigned char *rgb, int type, int dmode)
 	return (0);
 }
 
-int ft_update_map(t_editor_data *e_data)
+int ft_update_map(t_e_data *e_data)
 {
 	t_node_list *buff;
 	t_link_list *link_buff;
