@@ -11,7 +11,7 @@ int	ft_but_d_mode_lft_clkn(int x, int y, t_e_data *e_data, int type)
 	return (0);
 }
 
-int ft_but_d_mode_lft_clk(int x, int y, t_e_data *e_data, int type)
+int	ft_but_d_mode_lft_clk(int x, int y, t_e_data *e_data, int type)
 {
 	if (e_data->draw_state == DRAW_NONE && x > 0 && y > 42)
 		ft_but_d_mode_lft_clkn(x, y, e_data, type);
@@ -32,7 +32,7 @@ int ft_but_d_mode_lft_clk(int x, int y, t_e_data *e_data, int type)
 	return (0);
 }
 
-int ft_but_d_mode_rgt_clk(int x, int y, t_e_data *e_data, int type)
+int	ft_but_d_mode_rgt_clk(int x, int y, t_e_data *e_data, int type)
 {
 	t_node_list *buff;
 
@@ -59,8 +59,8 @@ int ft_but_d_mode_rgt_clk(int x, int y, t_e_data *e_data, int type)
 	return (0);
 }
 
-int ft_button_draw_mode_wall(int button, int x, int y, t_e_data *e_data)
-{   
+int	ft_button_draw_mode_wall(int button, int x, int y, t_e_data *e_data)
+{
 	if (button == 1)
 		ft_button_draw_mode_left_click(x, y, e_data, WALL);
 	if (button == 2 && e_data->draw_state == DRAW_NODE && x > 0 && y > 42)
@@ -69,8 +69,8 @@ int ft_button_draw_mode_wall(int button, int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int ft_button_draw_mode_floor(int button, int x, int y, t_e_data *e_data)
-{   
+int	ft_button_draw_mode_floor(int button, int x, int y, t_e_data *e_data)
+{
 	if (button == 1)
 		ft_button_draw_mode_left_click(x, y, e_data, FLOOR);
 	if (button == 2 && e_data->draw_state == DRAW_NODE && x > 0 && y > 42)
@@ -79,7 +79,7 @@ int ft_button_draw_mode_floor(int button, int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int ft_button_draw_top(int button, int x, int y, t_e_data *e_data)
+int	ft_button_draw_top(int button, int x, int y, t_e_data *e_data)
 {
 	if (button == 1)
 		ft_button_draw_mode_left_click(x, y, e_data, TOP);

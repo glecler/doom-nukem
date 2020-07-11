@@ -40,7 +40,7 @@ int	ft_mlx_win_gen(t_list *list)
 	return (1);
 }
 
-int main(void)
+int	main(void)
 {
 	t_list	*list;
 
