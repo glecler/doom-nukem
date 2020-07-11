@@ -1,6 +1,6 @@
 #include "../includes/doom_editor.h"
 
-int ft_new_file(t_e_data *e_data)
+int	ft_new_file(t_e_data *e_data)
 {
 	if (e_data->list)
 		ft_free_list(e_data->list);
@@ -21,11 +21,11 @@ int ft_new_file(t_e_data *e_data)
 	return (0);
 }
 
-int ft_export_file(t_e_data *e_data)
+int	ft_export_file(t_e_data *e_data)
 {
-	int fd;
-	char *filename;
-	int i;
+	int		fd;
+	char	*filename;
+	int		i;
 
 	if (!(filename = ft_strdup("new_map.obj")))
 		ft_error(FAILED_MALLOC);
@@ -41,14 +41,14 @@ int ft_export_file(t_e_data *e_data)
 		filename = ft_strjoin(filename, ").obj");
 	}
 	if (!(fd = open(filename, O_CREAT | O_WRONLY)))
-			ft_error(FAILED_OPEN_FILE);
+		ft_error(FAILED_OPEN_FILE);
 	if (ft_export_data_to_save(e_data, fd) == -1)
-			ft_error(FAILED_WRITE_DATA);
+		ft_error(FAILED_WRITE_DATA);
 	close(fd);
 	return (0);
 }
 
-int ft_export_data_to_save(t_e_data *e_data, int fd)
+int	ft_export_data_to_save(t_e_data *e_data, int fd)
 {
 	char *data;
 
@@ -59,7 +59,15 @@ int ft_export_data_to_save(t_e_data *e_data, int fd)
 	data = ft_strjoin(data, "vt 0 0\nvt 0 1\nvt 1 0\nvt 1 1\n");
 	data = ft_export_walls(e_data, data);
 	data = ft_export_floor_top(e_data, data);
-	data = ft_strjoin(data, "\n\nusemtl grey.xpm\nusemtl fin.xpm\nusemtl orbe.xpm\nusemtl orbe_grise.xpm\nusemtl tableau.xpm\nusemtl tableau.xpm\nusemtl portal.xpm\nusemtl proto_vert.xpm\nusemtl g_talk.xpm\nusemtl weapon.xpm\nusemtl laser.xpm\nusemtl jauge_5.xpm\nusemtl jauge_4.xpm\nusemtl jauge_3.xpm\nusemtl jauge_2.xpm\nusemtl jauge_1.xpm\nusemtl jauge_0.xpm\nusemtl jauge.xpm\nusemtl none.xpm");
+	data = ft_strjoin(data, "\n\nusemtl grey.xpm\nusemtl
+		fin.xpm\nusemtl orbe.xpm\nusemtl orbe_grise.xpm\n
+			usemtl tableau.xpm\nusemtl tableau.xpm\nusemtl
+				portal.xpm\nusemtl proto_vert.xpm\nusemtl g_talk
+					.xpm\nusemtl weapon.xpm\nusemtl laser.xpm\nusemtl
+						 jauge_5.xpm\nusemtl jauge_4.xpm\nusemtl jauge_3.xpm
+							\nusemtl jauge_2.xpm\nusemtl jauge_1.xpm\nusemtl
+								 jauge_0.xpm\nusemtl jauge.xpm\nusemtl
+									 none.xpm");
 	if (!data)
 		ft_error(FAILED_WRITE_DATA);
 	if (write(fd, data, ft_strlen(data)) == -1)

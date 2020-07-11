@@ -1,10 +1,10 @@
 #include "../includes/doom_editor.h"
 
-int ft_link_to_triangle(t_tlist *tlist, t_e_data *e_data)
+int		ft_link_to_triangle(t_tlist *tlist, t_e_data *e_data)
 {
-	t_node_list *node;
-	int i;
-	int no[4];
+	t_node_list	*node;
+	int			i;
+	int			no[4];
 
 	i = 0;
 	while (i < 3)
@@ -22,7 +22,7 @@ int ft_link_to_triangle(t_tlist *tlist, t_e_data *e_data)
 	return (1);
 }
 
-int ft_fill_tlist(t_tlist *tlist, t_e_data *e_data)
+int		ft_fill_tlist(t_tlist *tlist, t_e_data *e_data)
 {
 	if (!(ft_triangulate_polygon_floor(e_data)))
 		return (0);
@@ -33,7 +33,7 @@ int ft_fill_tlist(t_tlist *tlist, t_e_data *e_data)
 	return (1);
 }
 
-t_tlist *ft_create_triangles(t_e_data *e_data)
+t_tlist	*ft_create_triangles(t_e_data *e_data)
 {
 	t_tlist *tlist;
 

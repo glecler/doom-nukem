@@ -1,9 +1,9 @@
 #include "../includes/doom_editor.h"
 
-int ft_button_erase_mode(int button, int x, int y, t_e_data *e_data)
+int	ft_button_erase_mode(int button, int x, int y, t_e_data *e_data)
 {
 	t_node_list *buff;
-	
+
 	buff = e_data->list->first;
 	if (!(buff = ft_selected_node(x, y, e_data)) || button != 1)
 		return (0);

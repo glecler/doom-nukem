@@ -1,6 +1,6 @@
 #include "../includes/doom_editor.h"
 
-int ft_menu_choose_mode(int x, int y, t_e_data *e_data)
+int	ft_menu_choose_mode(int x, int y, t_e_data *e_data)
 {
 	if (e_data->mode == MENU_FILE)
 		ft_file_interact(x, y, e_data);
@@ -13,7 +13,7 @@ int ft_menu_choose_mode(int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int ft_draw_choose_mode(int button, int x, int y, t_e_data *e_data)
+int	ft_draw_choose_mode(int button, int x, int y, t_e_data *e_data)
 {
 	if (e_data->mode == DRAW_WALL)
 		ft_button_draw_mode_wall(button, x, y, e_data);
@@ -26,7 +26,7 @@ int ft_draw_choose_mode(int button, int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int ft_tool_choose_mode(int button, int x, int y, t_e_data *e_data)
+int	ft_tool_choose_mode(int button, int x, int y, t_e_data *e_data)
 {
 	if (e_data->mode == TOOL_LINK_WALL)
 		ft_button_link_mode_wall(button, x, y, e_data);
@@ -43,7 +43,7 @@ int ft_tool_choose_mode(int button, int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int ft_get_mouse(int button, int x, int y, t_e_data *e_data)
+int	ft_get_mouse(int button, int x, int y, t_e_data *e_data)
 {
 	if (y < 42)
 		ft_banner_interact(x, y, e_data);
@@ -56,7 +56,7 @@ int ft_get_mouse(int button, int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int		ft_get_key(int key, t_e_data *e_data)
+int	ft_get_key(int key, t_e_data *e_data)
 {
 	if (key == 53)
 		exit(0);
@@ -69,10 +69,10 @@ int		ft_get_key(int key, t_e_data *e_data)
 	if (key == 15)
 		e_data->display_mode = TOP;
 	ft_update_map(e_data);
-	return(0);
+	return (0);
 }
 
-int ft_get_motion(int x, int y, t_e_data *e_data)
+int	ft_get_motion(int x, int y, t_e_data *e_data)
 {
 	if (e_data->mode == DRAW_FLOOR)
 		ft_motion_draw_mode(x, y, e_data, FLOOR);

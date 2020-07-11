@@ -1,12 +1,12 @@
 #include "../includes/doom_editor.h"
 
-void ft_error(int errno)
+void	ft_error(int errno)
 {
 	if (errno == FAILED_NEW_IMAGE)
 		ft_putstr("error : image creation failed\n");
 	if (errno == FAILED_LIST_ALLOC)
 		ft_putstr("error : list allocation failed\n");
-   if (errno == FAILED_INIT_MLX)
+	if (errno == FAILED_INIT_MLX)
 		ft_putstr("error : MLX initialisation failed\n");
 	if (errno == FAILED_NEW_WIN)
 		ft_putstr("error : window creation failed\n");
@@ -24,10 +24,10 @@ void ft_error(int errno)
 		ft_putstr("error : saving data failed\n");
 	if (errno == FAILED_NODE_ALLOC)
 		ft_putstr("error : node allocation failed\n");
-	exit (0);
+	exit(0);
 }
 
-t_node ft_create_node(double x, double y, double z, int type)
+t_node	ft_create_node(double x, double y, double z, int type)
 {
 	t_node node;
 
@@ -51,7 +51,7 @@ void	ft_coord_swap(t_node *a, t_node *b)
 	a->z -= b->z;
 }
 
-t_link ft_set_link(t_node_list *a, t_node_list *b)
+t_link	ft_set_link(t_node_list *a, t_node_list *b)
 {
 	t_link link;
 

@@ -1,13 +1,13 @@
 #include "../includes/doom_editor.h"
 
-void ft_set_rgb(unsigned char *rgb, int r, int g, int b)
+void	ft_set_rgb(unsigned char *rgb, int r, int g, int b)
 {
 	rgb[0] = r;
 	rgb[1] = g;
 	rgb[2] = b;
 }
 
-t_node ft_set_node(t_node node, int x, int y, int z)
+t_node	ft_set_node(t_node node, int x, int y, int z)
 {
 	node.x = x;
 	node.y = y;
@@ -15,7 +15,7 @@ t_node ft_set_node(t_node node, int x, int y, int z)
 	return (node);
 }
 
-int ft_init_textures(t_win_data *w_data)
+int		ft_init_textures(t_win_data *w_data)
 {
 	int w;
 	int h;
@@ -41,7 +41,7 @@ int ft_init_textures(t_win_data *w_data)
 	return (0);
 }
 
-int ft_init_e_data(t_e_data *e_data, t_win_data *w_data, t_list *list, t_llist *llist)
+int		ft_init_e_data(t_e_data *e_data, t_win_data *w_data, t_list *list, t_llist *llist)
 {
 	e_data->win_data = w_data;
 	e_data->llist = llist;
@@ -56,8 +56,8 @@ int ft_init_e_data(t_e_data *e_data, t_win_data *w_data, t_list *list, t_llist *
 	ft_set_rgb(e_data->win_data->rgb, 0, 0, 127);
 	ft_set_rgb(e_data->win_data->green, 120, 240, 120);
 	e_data->win_data->buff_img_ptr = mlx_new_image(w_data->mlx_ptr, 1000, 800);
-	e_data->win_data->buff_addr = mlx_get_data_addr(e_data->win_data->buff_img_ptr,
-		&w_data->bpp, &w_data->size_line, &w_data->endian);
+	e_data->win_data->buff_addr = mlx_get_data_addr(e_data->win_data->
+		buff_img_ptr, &w_data->bpp, &w_data->size_line, &w_data->endian);
 	if (!e_data->win_data->buff_img_ptr || !e_data->win_data->img_ptr)
 		ft_error(FAILED_NEW_IMAGE);
 	if (!(e_data->buff_link = (t_link*)malloc(sizeof(t_link))))
@@ -66,7 +66,7 @@ int ft_init_e_data(t_e_data *e_data, t_win_data *w_data, t_list *list, t_llist *
 	return (0);
 }
 
-int ft_init_win_data(t_win_data *win_data)
+int	ft_init_win_data(t_win_data *win_data)
 {
 	win_data->mlx_ptr = 0;
 	win_data->win_ptr = 0;

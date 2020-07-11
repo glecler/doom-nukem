@@ -1,9 +1,10 @@
 #include "../includes/doom_editor.h"
 
-int     ft_big_pixel_img(char *addr, t_node node, unsigned char *rgb, t_e_data *e_data)
+int		ft_big_pixel_img(char *addr, t_node node,
+	unsigned char *rgb, t_e_data *e_data)
 {
-	int x_buff;
-	int y_buff;
+	int	x_buff;
+	int	y_buff;
 
 	x_buff = node.x - 10;
 	y_buff = node.y - 10;
@@ -45,7 +46,7 @@ int		ft_put_pixel_img(char *addr, int x, int y, unsigned char *rgb)
 	return (1);
 }
 
-void    ft_put_line_vert(t_node a, t_node b, char *addr, t_e_data *data)
+void	ft_put_line_vert(t_node a, t_node b, char *addr, t_e_data *data)
 {
 	double y;
 	double x;
@@ -58,22 +59,22 @@ void    ft_put_line_vert(t_node a, t_node b, char *addr, t_e_data *data)
 		ft_coord_swap(&a, &b);
 	if (b.y - b.z != a.y - a.z)
 		coeff = (b.x - a.x) / (b.y - b.z - a.y + a.z);
-	while (a.y + y  - a.z <= b.y - b.z)
+	while (a.y + y - a.z <= b.y - b.z)
 	{
 		x = ceil(y * coeff) + a.x;
 		ft_put_pixel_img(addr, x, (a.y - a.z + y) *
 			data->win_data->size_line, data->win_data->rgb);
-		ft_put_pixel_img(addr, x + 1, (a.y - a.z +  y) *
+		ft_put_pixel_img(addr, x + 1, (a.y - a.z + y) *
 			data->win_data->size_line, data->win_data->rgb);
 		y += 1;
 	}
 }
 
-void    ft_put_line_img(t_node a, t_node b, char *addr, t_e_data *data)
+void	ft_put_line_img(t_node a, t_node b, char *addr, t_e_data *data)
 {
 	double	coeff;
 	double	x;
-	double		y;
+	double	y;
 	int		res;
 
 	y = a.y - a.z;

@@ -1,10 +1,10 @@
 #include "../includes/doom_editor.h"
 
-t_node_list *ft_last_node(t_list *list)
+t_node_list	*ft_last_node(t_list *list)
 {
 	t_node_list *buff;
 
-	buff = list->first;                                     
+	buff = list->first;
 	if (buff->next)
 	{
 		while (buff->next)
@@ -13,24 +13,24 @@ t_node_list *ft_last_node(t_list *list)
 	return (buff);
 }
 
-t_node_list *ft_selected_node(int x, int y, t_e_data *e_data)
+t_node_list	*ft_selected_node(int x, int y, t_e_data *e_data)
 {
 	t_node_list *buff;
 
 	buff = e_data->list->first;
 	while (buff)
-		{
-			if (buff->node.x < x + 10 && buff->node.x > x - 10 &&
-				buff->node.y - (int)(buff->node.z) < y + 10 &&
-					buff->node.y - (int)(buff->node.z) > y - 10)
-				return (buff);
-			else
-				buff = buff->next;
-		}
+	{
+		if (buff->node.x < x + 10 && buff->node.x > x - 10 &&
+			buff->node.y - (int)(buff->node.z) < y + 10 &&
+				buff->node.y - (int)(buff->node.z) > y - 10)
+			return (buff);
+		else
+			buff = buff->next;
+	}
 	return (NULL);
 }
 
-int ft_delete_links_node(t_node_list *buff, t_llist *llist)
+int			ft_delete_links_node(t_node_list *buff, t_llist *llist)
 {
 	t_link_list *link_buff;
 
@@ -46,7 +46,7 @@ int ft_delete_links_node(t_node_list *buff, t_llist *llist)
 	return (0);
 }
 
-int ft_delete_last_link(t_llist *llist)
+int			ft_delete_last_link(t_llist *llist)
 {
 	t_link_list *buff;
 

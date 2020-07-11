@@ -1,6 +1,6 @@
 #include "../includes/doom_editor.h"
 
-int ft_tex_choose_tri_top(t_e_data *e_data)
+int	ft_tex_choose_tri_top(t_e_data *e_data)
 {
 	int i;
 	int tex;
@@ -17,7 +17,8 @@ int ft_tex_choose_tri_top(t_e_data *e_data)
 		return ((e_data->tex[i])[1]);
 	return (NONE);
 }
-int ft_tex_choose_tri_floor(t_e_data *e_data)
+
+int	ft_tex_choose_tri_floor(t_e_data *e_data)
 {
 	int i;
 	int tex;
@@ -34,7 +35,9 @@ int ft_tex_choose_tri_floor(t_e_data *e_data)
 		return ((e_data->tex[i])[0]);
 	return (NONE);
 }
-int ft_add_triangle_top(t_node_list *node, t_link_list *buff, int no[4], t_e_data *e_data)
+
+int	ft_add_triangle_top(t_node_list *node, t_link_list *buff,
+	int no[4], t_e_data *e_data)
 {
 	if ((node == buff->link.node_a ? buff->link.node_b :
 		buff->link.node_a)->no == no[0])
@@ -47,15 +50,16 @@ int ft_add_triangle_top(t_node_list *node, t_link_list *buff, int no[4], t_e_dat
 	return (0);
 }
 
-int ft_assign_tex_tri(int *tex, t_link_list *link)
+int	ft_assign_tex_tri(int *tex, t_link_list *link)
 {
 	tex[0] = link->link.floor_tex;
 	tex[1] = link->link.top_tex;
-	tex[2] = link->link.wall_tex; 
-	return (0);      
+	tex[2] = link->link.wall_tex;
+	return (0);
 }
 
-int ft_triangle_from_node_top(t_node_list *node, int vertex, t_e_data *e_data, int no[4])
+int	ft_triangle_from_node_top(t_node_list *node,
+	int vertex, t_e_data *e_data, int no[4])
 {
 	t_link_list *buff;
 
@@ -70,8 +74,9 @@ int ft_triangle_from_node_top(t_node_list *node, int vertex, t_e_data *e_data, i
 			ft_assign_tex_tri(e_data->tex[vertex], buff);
 			buff->active = 1;
 			if (vertex < 2)
-				ft_triangle_from_node_top(node == buff->link.node_a ? buff->link.node_b
-					: buff->link.node_a, vertex + 1, e_data, no);
+				ft_triangle_from_node_top(node == buff->link.node_a ?
+					buff->link.node_b : buff->link.node_a, vertex + 1
+						, e_data, no);
 			else if (vertex == 2)
 				ft_add_triangle_top(node, buff, no, e_data);
 			buff->active = 0;
@@ -81,7 +86,8 @@ int ft_triangle_from_node_top(t_node_list *node, int vertex, t_e_data *e_data, i
 	return (0);
 }
 
-int ft_add_triangle_floor(t_node_list *node, t_link_list *buff, int no[4], t_e_data *e_data)
+int	ft_add_triangle_floor(t_node_list *node, t_link_list *buff,
+	int no[4], t_e_data *e_data)
 {
 	if ((node == buff->link.node_a ? buff->link.node_b :
 		buff->link.node_a)->no == no[0])
@@ -94,7 +100,8 @@ int ft_add_triangle_floor(t_node_list *node, t_link_list *buff, int no[4], t_e_d
 	return (0);
 }
 
-int ft_triangle_from_node_floor(t_node_list *node, int vertex, t_e_data *e_data, int no[4])
+int	ft_triangle_from_node_floor(t_node_list *node, int vertex,
+	t_e_data *e_data, int no[4])
 {
 	t_link_list *buff;
 
@@ -102,7 +109,8 @@ int ft_triangle_from_node_floor(t_node_list *node, int vertex, t_e_data *e_data,
 	while (buff)
 	{
 		if ((buff->link.node_a == node || buff->link.node_b == node) &&
-			(buff->active == 0) && (buff->type == FLOOR || buff->type == FLOOR_WALL
+			(buff->active == 0) && (buff->type == FLOOR ||
+				buff->type == FLOOR_WALL
 				|| buff->type == TOP_FLOOR_WALL || buff->type == TOP_FLOOR))
 		{
 			no[vertex] = node->no;
@@ -110,7 +118,8 @@ int ft_triangle_from_node_floor(t_node_list *node, int vertex, t_e_data *e_data,
 			buff->active = 1;
 			if (vertex < 2)
 				ft_triangle_from_node_floor(node == buff->link.node_a ?
-					buff->link.node_b : buff->link.node_a, vertex + 1, e_data, no);
+					buff->link.node_b : buff->link.node_a, vertex + 1
+						, e_data, no);
 			else if (vertex == 2)
 				ft_add_triangle_floor(node, buff, no, e_data);
 			buff->active = 0;
