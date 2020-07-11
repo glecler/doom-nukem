@@ -34,10 +34,12 @@ int ft_tool_choose_mode(int button, int x, int y, t_editor_data *e_data)
         ft_button_link_mode_floor(button, x, y, e_data);
     else if (e_data->mode == TOOL_LINK_TOP)
         ft_button_link_mode_top(button, x, y, e_data);
-    else if (e_data->mode == TOOL_TEXTURES)
-        ;//ft_button_textures(button, x, y, e_data);
+    else if (e_data->mode == TEX_CHOOSE)
+        ft_choose_texture(button, x, y, e_data);
     else if (e_data->mode == TOOL_Z)
         ft_button_z_mode(x, y, button, e_data);
+    else if (e_data->mode == TOOL_TEXTURES)
+        ft_button_textures(button, x, y, e_data);
     return (0);
 }
 
@@ -58,6 +60,15 @@ int		ft_get_key(int key, t_editor_data *e_data)
 {
 	if (key == 53)
 		exit(0);
+    if (key == 12)
+        e_data->display_mode = ALL;
+    if (key == 13)
+        e_data->display_mode = WALL;
+    if (key == 14)
+        e_data->display_mode = FLOOR;
+    if (key == 15)
+        e_data->display_mode = TOP;
+    ft_update_map(e_data);
 	return(0);
 }
 

@@ -26,7 +26,7 @@ void    ft_delete_triangle(t_triangle_list *triangle, t_tlist *tlist)
     }
 }
 
-int    ft_add_to_tlist(t_triangle triangle, t_tlist *tlist)
+int    ft_add_to_tlist(t_triangle triangle, t_tlist *tlist, int tex)
 {
     t_triangle_list *buff;
 
@@ -36,6 +36,7 @@ int    ft_add_to_tlist(t_triangle triangle, t_tlist *tlist)
         if (!(buff = (t_triangle_list*)malloc(sizeof(t_triangle_list))))
             ft_error(FAILED_MALLOC);
         buff->triangle = triangle;
+        buff->triangle.tex = tex;
         buff->next = NULL;
         buff->prev = NULL;
         tlist->first = buff;
@@ -48,6 +49,7 @@ int    ft_add_to_tlist(t_triangle triangle, t_tlist *tlist)
         if (!(buff->next = (t_triangle_list*)malloc(sizeof(t_triangle_list))))
             ft_error(FAILED_MALLOC);       
         buff->next->triangle = triangle;
+        buff->next->triangle.tex = tex;
         buff->next->next = NULL;
         buff->next->prev = buff;
         buff->next->prev->next = buff->next;
@@ -69,6 +71,7 @@ int ft_print_tlist(t_tlist *tlist)
         printf("  a    : [%d]\n", buff->triangle.a);
         printf("  b    : [%d]\n\n", buff->triangle.b);
         printf("  c    : [%d]\n\n", buff->triangle.c);
+        printf("  tex  : [%d]\n", buff->triangle.tex);
         if (buff->next == NULL)
             printf("last node!\n");
         i++;

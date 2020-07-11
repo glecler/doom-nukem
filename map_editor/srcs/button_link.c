@@ -22,7 +22,6 @@ int ft_button_link_second_node(t_editor_data *e_data, t_node_list *buff, int typ
         ft_delete_last_link(e_data->llist);
     e_data->link_state = FIRST_NODE;
     ft_update_map(e_data);
-    ft_print_llist(e_data->llist);
     return (0);
 }
 

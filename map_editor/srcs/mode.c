@@ -44,7 +44,7 @@ int ft_mode_interact(int x, int y, t_editor_data *e_data)
 
 int ft_tool_interact(int x, int y, t_editor_data *e_data)
 {
-     if (x > 728 && x < 1000 && y > 42 && y < 190)
+     if (x > 728 && x < 1000 && y > 42 && y < 210)
     {
         if (y > 42 && y < 80)
             e_data->mode = TOOL_Z;
@@ -52,9 +52,10 @@ int ft_tool_interact(int x, int y, t_editor_data *e_data)
             e_data->mode = SELECT;
         if (y > 124 && y < 157)
             e_data->mode = ERASE;
-        if (y > 157 && y < 190)
-            e_data->mode = TOOL_TEXTURES;
+        if (y > 157 && y < 210)
+            e_data->mode = TEX_CHOOSE;
     }
+    printf("mode %d\n", e_data->mode);
     ft_display_map(e_data);
     return (0);
 }

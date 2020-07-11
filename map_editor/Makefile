@@ -10,7 +10,7 @@ SRC 	= ./srcs/main.c ./srcs/graphics.c \
 		./srcs/link_tools.c ./srcs/tlist.c ./srcs/button_z.c \
 		./srcs/triangle.c ./srcs/triangulate.c ./srcs/triangle_tools.c \
 		./srcs/clean_links.c ./srcs/recursive_triangle.c \
-		./srcs/export_file.c
+		./srcs/export_file.c ./srcs/button_texture.c
 		
 FLAGS 	= -Wall -Wextra -Wno-nullability-completeness
 CC		= clang

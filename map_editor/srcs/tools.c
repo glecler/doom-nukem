@@ -3,29 +3,27 @@
 void ft_error(int errno)
 {
     if (errno == FAILED_NEW_IMAGE)
-        printf("error : image creation failed\n");
+        ft_putstr("error : image creation failed\n");
     if (errno == FAILED_LIST_ALLOC)
-        printf("error : list allocation failed\n");
+        ft_putstr("error : list allocation failed\n");
    if (errno == FAILED_INIT_MLX)
-        printf("error : MLX initialisation failed\n");
+        ft_putstr("error : MLX initialisation failed\n");
     if (errno == FAILED_NEW_WIN)
-        printf("error : window creation failed\n");
+        ft_putstr("error : window creation failed\n");
     if (errno == FAILED_NEW_TEX)
-        printf("error : texture image creation failed\n");
+        ft_putstr("error : texture image creation failed\n");
     if (errno == FAILED_MALLOC)
-        printf("error : memory allocation failed\n");
+        ft_putstr("error : memory allocation failed\n");
     if (errno == FAILED_READ_FILE)
-        printf("error : reading file failed\n");
+        ft_putstr("error : reading file failed\n");
     if (errno == FAILED_OPEN_FILE)
-        printf("error : opening file failed\n");
+        ft_putstr("error : opening file failed\n");
     if (errno == FAILED_WRITE_FILE)
-        printf("error : writing to file failed\n");
+        ft_putstr("error : writing to file failed\n");
     if (errno == FAILED_WRITE_DATA)
-        printf("error : saving data failed\n");
-    if (errno == FAILED_SAVE_OVERFLOW)
-        printf("error : too many saves\n");
+        ft_putstr("error : saving data failed\n");
     if (errno == FAILED_NODE_ALLOC)
-        printf("error : node allocation failed\n");
+        ft_putstr("error : node allocation failed\n");
     exit (0);
 }
 
@@ -59,5 +57,11 @@ t_link ft_set_link(t_node_list *a, t_node_list *b)
 
     link.node_a = a;
     link.node_b = b;
+    if (link.node_a->floor_tex == link.node_b->floor_tex)
+        link.floor_tex = link.node_a->floor_tex;
+    if (link.node_a->top_tex == link.node_b->top_tex)
+        link.top_tex = link.node_a->top_tex;
+    if (link.node_a->wall_tex == link.node_b->wall_tex)
+        link.wall_tex = link.node_a->wall_tex;
     return (link);
 }

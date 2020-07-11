@@ -39,6 +39,9 @@ int    ft_add_to_list(t_node node, t_list *list)
         buff->node = node;
         buff->next = NULL;
         buff->prev = NULL;
+        buff->floor_tex = NONE;
+        buff->top_tex = NONE;
+        buff->wall_tex = NONE;
         list->first = buff;
         return (0);
     }
@@ -49,6 +52,9 @@ int    ft_add_to_list(t_node node, t_list *list)
         if (!(buff->next = (t_node_list*)malloc(sizeof(t_node_list))))
             ft_error(FAILED_NODE_ALLOC);       
         buff->next->node = node;
+        buff->floor_tex = NONE;
+        buff->top_tex = NONE;
+        buff->wall_tex = NONE;
         buff->next->next = NULL;
         buff->next->prev = buff;
         buff->next->prev->next = buff->next;

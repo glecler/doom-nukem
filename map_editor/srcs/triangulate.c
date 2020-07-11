@@ -40,6 +40,7 @@ int ft_add_floor_link(t_node_list *node, t_editor_data *e_data)
                 node->node.z, node->type);
             segment.b = ft_create_node(buff->node.x, buff->node.y,
                 buff->node.z, buff->type);
+            segment.type = FLOOR;
             if (ft_intersect_llist(segment, e_data->llist) == 0)
                 ft_add_to_llist(ft_set_link(node, buff), e_data->llist, FLOOR);
         }
@@ -66,6 +67,7 @@ int ft_add_top_link(t_node_list *node, t_editor_data *e_data)
                 node->node.z, node->type);
             segment.b = ft_create_node(buff->node.x, buff->node.y,
                 buff->node.z, buff->type);
+            segment.type = TOP;
             if (ft_intersect_llist(segment, e_data->llist) == 0)
                 ft_add_to_llist(ft_set_link(node, buff), e_data->llist, TOP);
         }

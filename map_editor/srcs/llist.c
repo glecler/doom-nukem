@@ -51,34 +51,11 @@ int    ft_add_to_llist(t_link link, t_llist *llist, int type)
             ft_error(FAILED_LINK_ALLOC);       
         buff->next->link = link;
         buff->next->active = 0;
-        buff->next->type = type;
+        buff->next->type = type;       
         buff->next->next = NULL;
         buff->next->prev = buff;
         buff->next->prev->next = buff->next;
     }
-    return (0);
-}
-
-int ft_print_llist(t_llist *llist)
-{
-    t_link_list *buff;
-    int i;
-
-    i = 0;
-    buff = llist->first;
-    printf("~~~~~~ LINK LIST ~~~~~~~~\n\n");
-    while (buff)
-    {
-        printf("  link   : [%d]\n", i);
-        printf("  type   : %d\n", buff->type);
-        printf("  node a : [%.0f, %.0f]\n", buff->link.node_a->node.x, buff->link.node_a->node.y);
-        printf("  node b : [%.0f, %0.0f]\n\n", buff->link.node_b->node.x, buff->link.node_b->node.y);
-        if (buff->next == NULL)
-            printf("last link!\n");
-        i++;
-        buff = buff->next;
-    }
-    printf("\n~~~~~~~~~~~~~~~~~~~~~\n");
     return (0);
 }
 

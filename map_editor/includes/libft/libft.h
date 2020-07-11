@@ -72,5 +72,4 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 long double    ft_abs(long double i);
 int			get_next_line(const int fd, char **line);
-
 #endif
