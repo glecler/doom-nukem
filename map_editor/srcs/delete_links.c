@@ -24,7 +24,7 @@ int	ft_delete_2_links(t_link_list *link, t_link_list *buff, t_llist *llist)
 	if (buff->type == link->type)
 	{
 		ft_delete_link(buff, llist);
-			return (1);
+		return (1);
 	}
 	if ((buff->type == FLOOR && link->type == WALL) ||
 		(buff->type == WALL && link->type == FLOOR))

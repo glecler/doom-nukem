@@ -62,7 +62,8 @@ char	*ft_export_walls(t_e_data *e_data, char *data)
 	link_buff = e_data->llist->first;
 	while (link_buff)
 	{
-		if (link_buff->type == WALL || link_buff->type == FLOOR_WALL || link_buff->type == TOP_FLOOR_WALL || link_buff->type == TOP_WALL)
+		if (link_buff->type == WALL || link_buff->type == FLOOR_WALL
+			|| link_buff->type == TOP_FLOOR_WALL || link_buff->type == TOP_WALL)
 		{
 			data = ft_strjoin(data, "o newobject\n");
 			data = ft_strjoin(data, "usemtl ");

@@ -1,13 +1,11 @@
 #include "../includes/doom_editor.h"
 
-int	ft_new_file(t_e_data *e_data)
+int		ft_new_file(t_e_data *e_data)
 {
 	if (e_data->list)
 		ft_free_list(e_data->list);
 	if (e_data->llist)
 		ft_free_llist(e_data->llist);
-	//if (e_data->tlist)
-	//	ft_free_tlist(e_data->tlist);
 	ft_flush_img(&e_data->win_data->addr);
 	ft_flush_img(&e_data->win_data->buff_addr);
 	ft_display_map(e_data);
@@ -23,7 +21,7 @@ int	ft_new_file(t_e_data *e_data)
 	return (0);
 }
 
-int	ft_export_file(t_e_data *e_data)
+int		ft_export_file(t_e_data *e_data)
 {
 	int		fd;
 	char	*filename;
@@ -51,7 +49,7 @@ int	ft_export_file(t_e_data *e_data)
 	return (0);
 }
 
-char *ft_join_mtl(char *data)
+char	*ft_join_mtl(char *data)
 {
 	data = ft_strjoin(data, "\n\nusemtl grey.xpm\nusemtl fin.xpm\n");
 	data = ft_strjoin(data, "usemtl orbe.xpm\nusemtl orbe_grise.xpm\n");
@@ -66,7 +64,7 @@ char *ft_join_mtl(char *data)
 	return (data);
 }
 
-int	ft_export_data_to_save(t_e_data *e_data, int fd)
+int		ft_export_data_to_save(t_e_data *e_data, int fd)
 {
 	char *data;
 

@@ -20,7 +20,7 @@ int			ft_choose_texture(int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int ft_type_display(int type, int dmode)
+int			ft_type_display(int type, int dmode)
 {
 	if ((type == WALL || type == FLOOR_WALL || type == TOP_FLOOR_WALL ||
 		type == TOP_WALL) && (dmode == WALL || dmode == ALL))

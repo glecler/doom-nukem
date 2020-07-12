@@ -34,9 +34,11 @@ int		ft_init_textures(t_win_data *w_data)
 		"./map_editor/assets/tools.xpm", &w, &h);
 	(w_data->ux_textures[5]).img_ptr = mlx_xpm_file_to_image(w_data->mlx_ptr,
 		"./map_editor/assets/tex_menu.xpm", &w, &h);
-	if (!((w_data->ux_textures[0]).img_ptr) || !((w_data->ux_textures[1]).img_ptr)
-		|| !((w_data->ux_textures[2]).img_ptr) || !(w_data->ux_textures[3].img_ptr
-			|| !(w_data->ux_textures[4].img_ptr)))
+	if (!((w_data->ux_textures[0]).img_ptr) ||
+		!((w_data->ux_textures[1]).img_ptr) ||
+			!((w_data->ux_textures[2]).img_ptr) ||
+				!(w_data->ux_textures[3].img_ptr ||
+					!(w_data->ux_textures[4].img_ptr)))
 		ft_error(FAILED_NEW_TEX);
 	return (0);
 }
@@ -67,7 +69,7 @@ int		ft_init_editor_data(t_e_data *e_data, t_win_data *w_data,
 	return (0);
 }
 
-int	ft_init_win_data(t_win_data *win_data)
+int		ft_init_win_data(t_win_data *win_data)
 {
 	win_data->mlx_ptr = 0;
 	win_data->win_ptr = 0;
