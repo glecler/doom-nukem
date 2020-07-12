@@ -1,9 +1,9 @@
 build/SDL_render_gles2.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/SDL_render_gles2.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/SDL_render_gles2.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -115,7 +115,7 @@ build/SDL_render_gles2.lo: \
   /usr/local/include/runetype.h /usr/local/include/inttypes.h \
   /usr/local/include/math.h /usr/local/include/float.h \
   include/SDL_opengles2.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/../SDL_sysrender.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/../SDL_sysrender.h \
   include/SDL_render.h include/SDL_rect.h include/SDL_error.h \
   include/SDL_pixels.h include/SDL_endian.h include/SDL_rwops.h \
   include/SDL_video.h include/SDL_surface.h include/SDL_blendmode.h \
@@ -123,9 +123,9 @@ build/SDL_render_gles2.lo: \
   include/SDL_scancode.h include/SDL_mouse.h include/SDL_joystick.h \
   include/SDL_gamecontroller.h include/SDL_quit.h include/SDL_gesture.h \
   include/SDL_touch.h include/SDL_mutex.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/../SDL_yuv_sw_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/../../video/SDL_blit.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/../../video/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/../SDL_yuv_sw_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/../../video/SDL_blit.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/../../video/../SDL_internal.h \
   include/SDL_cpuinfo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/SDL_shaders_gles2.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/opengles2/SDL_gles2funcs.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/SDL_shaders_gles2.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/opengles2/SDL_gles2funcs.h

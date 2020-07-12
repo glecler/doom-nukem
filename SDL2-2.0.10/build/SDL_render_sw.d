@@ -1,15 +1,15 @@
 build/SDL_render_sw.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_render_sw.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_render_sw.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
   /usr/local/include/AvailabilityInternal.h include/begin_code.h \
   include/close_code.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../SDL_sysrender.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../SDL_sysrender.h \
   include/SDL_render.h include/SDL_stdinc.h \
   /usr/local/include/sys/types.h /usr/local/include/sys/appleapiopts.h \
   /usr/local/include/sys/cdefs.h \
@@ -123,16 +123,16 @@ build/SDL_render_sw.lo: \
   include/SDL_mouse.h include/SDL_joystick.h \
   include/SDL_gamecontroller.h include/SDL_quit.h include/SDL_gesture.h \
   include/SDL_touch.h include/SDL_mutex.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../SDL_yuv_sw_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_render_sw_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../SDL_yuv_sw_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_render_sw_c.h \
   include/SDL_hints.h include/SDL_assert.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_draw.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../video/SDL_blit.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../video/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_draw.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../video/SDL_blit.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../video/../SDL_internal.h \
   include/SDL_cpuinfo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_blendfillrect.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_blendline.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_blendpoint.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_drawline.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_drawpoint.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_rotate.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_blendfillrect.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_blendline.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_blendpoint.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_drawline.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_drawpoint.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_rotate.h

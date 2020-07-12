@@ -1,5 +1,5 @@
 build/SDL_dummysensor.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/sensor/dummy/SDL_dummysensor.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/sensor/dummy/SDL_dummysensor.c \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -112,6 +112,6 @@ build/SDL_dummysensor.lo: \
   /usr/local/include/runetype.h /usr/local/include/inttypes.h \
   /usr/local/include/math.h /usr/local/include/float.h \
   include/SDL_sensor.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/sensor/dummy/SDL_dummysensor.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/sensor/dummy/../SDL_syssensor.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/sensor/dummy/../SDL_sensor_c.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/sensor/dummy/SDL_dummysensor.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/sensor/dummy/../SDL_syssensor.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/sensor/dummy/../SDL_sensor_c.h

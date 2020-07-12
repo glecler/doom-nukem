@@ -1,9 +1,9 @@
 build/SDL_diskaudio.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/SDL_diskaudio.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/SDL_diskaudio.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -117,9 +117,9 @@ build/SDL_diskaudio.lo: \
   include/SDL_error.h include/SDL_timer.h include/SDL_audio.h \
   include/SDL_endian.h include/SDL_mutex.h include/SDL_thread.h \
   include/SDL_atomic.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/../SDL_audio_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/SDL_diskaudio.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/../SDL_sysaudio.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/../../SDL_dataqueue.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/disk/.././SDL_audio_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/../SDL_audio_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/SDL_diskaudio.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/../SDL_sysaudio.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/../../SDL_dataqueue.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/disk/.././SDL_audio_c.h \
   include/SDL_log.h

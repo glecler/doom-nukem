@@ -1,9 +1,9 @@
 build/SDL_rotate.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_rotate.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_rotate.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -127,4 +127,4 @@ build/SDL_rotate.lo: \
   include/SDL_messagebox.h include/SDL_power.h include/SDL_render.h \
   include/SDL_sensor.h include/SDL_shape.h include/SDL_system.h \
   include/SDL_timer.h include/SDL_version.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_rotate.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_rotate.h

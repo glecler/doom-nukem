@@ -1,6 +1,6 @@
 #include "../includes/doom_editor.h"
 
-int			ft_choose_texture(int button, int x, int y, t_e_data *e_data)
+int			ft_choose_texture(int x, int y, t_e_data *e_data)
 {
 	mlx_put_image_to_window(e_data->win_data->mlx_ptr,
 		e_data->win_data->win_ptr,
@@ -20,6 +20,20 @@ int			ft_choose_texture(int button, int x, int y, t_e_data *e_data)
 	return (0);
 }
 
+int ft_type_display(int type, int dmode)
+{
+	if ((type == WALL || type == FLOOR_WALL || type == TOP_FLOOR_WALL ||
+		type == TOP_WALL) && (dmode == WALL || dmode == ALL))
+		return (1);
+	if ((type == TOP || type == TOP_FLOOR || type == TOP_FLOOR_WALL ||
+		type == TOP_WALL) && (dmode == TOP || dmode == ALL))
+		return (1);
+	if ((type == FLOOR || type == TOP_FLOOR || type == TOP_FLOOR_WALL ||
+		type == FLOOR_WALL) && (dmode == FLOOR || dmode == ALL))
+		return (1);
+	return (0);
+}
+
 t_link_list	*ft_selected_link(t_e_data *e_data)
 {
 	t_link_list *link;
@@ -31,7 +45,10 @@ t_link_list	*ft_selected_link(t_e_data *e_data)
 			&& link->link.node_b == e_data->buff_link->node_b)
 				|| (link->link.node_a == e_data->buff_link->node_b
 					&& link->link.node_b == e_data->buff_link->node_a))
-			return (link);
+		{
+			if (ft_type_display(link->type, e_data->display_mode) == 1)
+				return (link);
+		}
 		link = link->next;
 	}
 	return (NULL);
@@ -78,8 +95,9 @@ int			ft_button_textures(int button, int x, int y, t_e_data *e_data)
 	else
 	{
 		e_data->buff_link->node_b = buff;
-		if ((buff_link = ft_selected_link(e_data)))
-			ft_assign_tex(buff_link, e_data);
+		if (!(buff_link = ft_selected_link(e_data)))
+			return (0);
+		ft_assign_tex(buff_link, e_data);
 		e_data->link_state = FIRST_NODE;
 		ft_update_map(e_data);
 	}

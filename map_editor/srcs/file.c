@@ -6,6 +6,8 @@ int	ft_new_file(t_e_data *e_data)
 		ft_free_list(e_data->list);
 	if (e_data->llist)
 		ft_free_llist(e_data->llist);
+	//if (e_data->tlist)
+	//	ft_free_tlist(e_data->tlist);
 	ft_flush_img(&e_data->win_data->addr);
 	ft_flush_img(&e_data->win_data->buff_addr);
 	ft_display_map(e_data);
@@ -44,8 +46,24 @@ int	ft_export_file(t_e_data *e_data)
 		ft_error(FAILED_OPEN_FILE);
 	if (ft_export_data_to_save(e_data, fd) == -1)
 		ft_error(FAILED_WRITE_DATA);
+	ft_update_map(e_data);
 	close(fd);
 	return (0);
+}
+
+char *ft_join_mtl(char *data)
+{
+	data = ft_strjoin(data, "\n\nusemtl grey.xpm\nusemtl fin.xpm\n");
+	data = ft_strjoin(data, "usemtl orbe.xpm\nusemtl orbe_grise.xpm\n");
+	data = ft_strjoin(data, "usemtl tableau.xpm\nusemtl tableau.xpm\n");
+	data = ft_strjoin(data, "usemtl portal.xpm\nusemtl proto_vert.xpm\n");
+	data = ft_strjoin(data, "usemtl g_talk.xpm\nusemtl weapon.xpm\n");
+	data = ft_strjoin(data, "usemtl laser.xpm\nusemtl jauge_5.xpm\n");
+	data = ft_strjoin(data, "usemtl jauge_4.xpm\nusemtl jauge_3.xpm\n");
+	data = ft_strjoin(data, "usemtl jauge_2.xpm\nusemtl jauge_1.xpm\n");
+	data = ft_strjoin(data, "usemtl jauge_0.xpm\nusemtl jauge.xpm\n");
+	data = ft_strjoin(data, "usemtl none.xpm\n");
+	return (data);
 }
 
 int	ft_export_data_to_save(t_e_data *e_data, int fd)
@@ -59,15 +77,7 @@ int	ft_export_data_to_save(t_e_data *e_data, int fd)
 	data = ft_strjoin(data, "vt 0 0\nvt 0 1\nvt 1 0\nvt 1 1\n");
 	data = ft_export_walls(e_data, data);
 	data = ft_export_floor_top(e_data, data);
-	data = ft_strjoin(data, "\n\nusemtl grey.xpm\nusemtl
-		fin.xpm\nusemtl orbe.xpm\nusemtl orbe_grise.xpm\n
-			usemtl tableau.xpm\nusemtl tableau.xpm\nusemtl
-				portal.xpm\nusemtl proto_vert.xpm\nusemtl g_talk
-					.xpm\nusemtl weapon.xpm\nusemtl laser.xpm\nusemtl
-						 jauge_5.xpm\nusemtl jauge_4.xpm\nusemtl jauge_3.xpm
-							\nusemtl jauge_2.xpm\nusemtl jauge_1.xpm\nusemtl
-								 jauge_0.xpm\nusemtl jauge.xpm\nusemtl
-									 none.xpm");
+	data = ft_join_mtl(data);
 	if (!data)
 		ft_error(FAILED_WRITE_DATA);
 	if (write(fd, data, ft_strlen(data)) == -1)

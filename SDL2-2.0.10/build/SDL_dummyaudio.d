@@ -1,9 +1,9 @@
 build/SDL_dummyaudio.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/SDL_dummyaudio.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/SDL_dummyaudio.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -117,8 +117,8 @@ build/SDL_dummyaudio.lo: \
   include/SDL_error.h include/SDL_audio.h include/SDL_endian.h \
   include/SDL_mutex.h include/SDL_thread.h include/SDL_atomic.h \
   include/SDL_rwops.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/../SDL_audio_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/SDL_dummyaudio.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/../SDL_sysaudio.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/../../SDL_dataqueue.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/audio/dummy/.././SDL_audio_c.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/../SDL_audio_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/SDL_dummyaudio.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/../SDL_sysaudio.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/../../SDL_dataqueue.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/audio/dummy/.././SDL_audio_c.h

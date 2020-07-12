@@ -27,6 +27,17 @@ void	ft_delete_node(t_node_list *node, t_list *list)
 	list->list_size -= 1;
 }
 
+int		ft_set_node_list(t_node node, t_node_list *buff)
+{
+	buff->node = node;
+	buff->next = NULL;
+	buff->prev = NULL;
+	buff->floor_tex = NONE;
+	buff->top_tex = NONE;
+	buff->wall_tex = NONE;
+	return (0);
+}
+
 int		ft_add_to_list(t_node node, t_list *list)
 {
 	t_node_list *buff;
@@ -36,12 +47,7 @@ int		ft_add_to_list(t_node node, t_list *list)
 	{
 		if (!(buff = (t_node_list*)malloc(sizeof(t_node_list))))
 			ft_error(FAILED_NODE_ALLOC);
-		buff->node = node;
-		buff->next = NULL;
-		buff->prev = NULL;
-		buff->floor_tex = NONE;
-		buff->top_tex = NONE;
-		buff->wall_tex = NONE;
+		ft_set_node_list(node, buff);
 		list->first = buff;
 		return (0);
 	}
@@ -51,11 +57,7 @@ int		ft_add_to_list(t_node node, t_list *list)
 			buff = buff->next;
 		if (!(buff->next = (t_node_list*)malloc(sizeof(t_node_list))))
 			ft_error(FAILED_NODE_ALLOC);
-		buff->next->node = node;
-		buff->floor_tex = NONE;
-		buff->top_tex = NONE;
-		buff->wall_tex = NONE;
-		buff->next->next = NULL;
+		ft_set_node_list(node, buff->next);
 		buff->next->prev = buff;
 		buff->next->prev->next = buff->next;
 	}

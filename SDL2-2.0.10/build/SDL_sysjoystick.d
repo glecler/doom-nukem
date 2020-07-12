@@ -1,9 +1,9 @@
 build/SDL_sysjoystick.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/SDL_sysjoystick.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/SDL_sysjoystick.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -120,11 +120,11 @@ build/SDL_sysjoystick.lo: \
   include/SDL_keycode.h include/SDL_scancode.h include/SDL_mouse.h \
   include/SDL_joystick.h include/SDL_gamecontroller.h include/SDL_quit.h \
   include/SDL_gesture.h include/SDL_touch.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../SDL_sysjoystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../SDL_joystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/SDL_sysjoystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../SDL_sysjoystick.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../SDL_joystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/SDL_sysjoystick_c.h \
   /usr/local/include/os/availability.h /usr/local/include/sys/qos.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../hidapi/SDL_hidapijoystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../hidapi/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../hidapi/../../hidapi/hidapi/hidapi.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/darwin/../../haptic/darwin/SDL_syshaptic_c.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../hidapi/SDL_hidapijoystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../hidapi/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../hidapi/../../hidapi/hidapi/hidapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/darwin/../../haptic/darwin/SDL_syshaptic_c.h

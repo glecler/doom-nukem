@@ -1,9 +1,9 @@
 build/SDL_joystick.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/SDL_joystick.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/SDL_joystick.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -127,26 +127,26 @@ build/SDL_joystick.lo: \
   include/SDL_messagebox.h include/SDL_power.h include/SDL_render.h \
   include/SDL_sensor.h include/SDL_shape.h include/SDL_system.h \
   include/SDL_timer.h include/SDL_version.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/SDL_sysjoystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/SDL_joystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_events_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../video/SDL_sysvideo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../video/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../video/SDL_vulkan_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vk_platform.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vulkan_core.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vulkan_macos.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/SDL_sysjoystick.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/SDL_joystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_events_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../video/SDL_sysvideo.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../video/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../video/SDL_vulkan_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vulkan.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vk_platform.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vulkan_core.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../video/./khronos/vulkan/vulkan_macos.h \
   include/SDL_vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_clipboardevents_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_displayevents_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_dropevents_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_gesture_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_keyboard_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_mouse_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_touch_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/../../include/SDL_touch.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../events/SDL_windowevents_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/../video/SDL_sysvideo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/controller_type.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_clipboardevents_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_displayevents_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_dropevents_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_gesture_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_keyboard_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_mouse_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_touch_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/../../include/SDL_touch.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../events/SDL_windowevents_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/../video/SDL_sysvideo.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/controller_type.h

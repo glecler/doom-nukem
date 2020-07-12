@@ -1,9 +1,9 @@
 build/SDL_rect.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_rect.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_rect.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -116,5 +116,5 @@ build/SDL_rect.lo: \
   /usr/local/include/math.h /usr/local/include/float.h \
   include/SDL_error.h include/SDL_pixels.h include/SDL_endian.h \
   include/SDL_rwops.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_rect_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_rect_c.h \
   include/SDL_assert.h

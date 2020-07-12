@@ -1,9 +1,9 @@
 build/SDL_sysfilesystem.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/filesystem/cocoa/SDL_sysfilesystem.m \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/filesystem/cocoa/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/filesystem/cocoa/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/filesystem/cocoa/SDL_sysfilesystem.m \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/filesystem/cocoa/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/filesystem/cocoa/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/filesystem/cocoa/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/filesystem/cocoa/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \

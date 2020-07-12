@@ -59,16 +59,6 @@ int	ft_tool_interact(int x, int y, t_e_data *e_data)
 	return (0);
 }
 
-int	ft_banner_choose(int tex, int x, int type, t_e_data *e_data)
-{
-	ft_display_map(e_data);
-	mlx_put_image_to_window(e_data->win_data->mlx_ptr,
-		e_data->win_data->win_ptr,
-			e_data->win_data->ux_textures[tex].img_ptr, x, 0);
-	e_data->mode = type;
-	return (0);
-}
-
 int	ft_banner_interact(int x, int y, t_e_data *e_data)
 {
 	if (x > 0 && x < 240 && y < 42 && y > 0)

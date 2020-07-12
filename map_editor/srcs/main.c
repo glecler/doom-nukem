@@ -2,8 +2,8 @@
 
 int	ft_map_edit(t_win_data *w_data, t_list *list)
 {
-	t_editor_data	editor_data;
-	t_llist			*llist;
+	t_e_data	editor_data;
+	t_llist		*llist;
 
 	if (!(llist = (t_llist*)malloc(sizeof(t_llist))))
 		ft_error(FAILED_LIST_ALLOC);

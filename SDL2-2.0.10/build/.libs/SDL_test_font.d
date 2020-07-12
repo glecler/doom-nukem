@@ -1,5 +1,5 @@
 build/SDL_test_font.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/test/SDL_test_font.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/test/SDL_test_font.c \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \

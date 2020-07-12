@@ -1,9 +1,9 @@
 build/SDL_timer.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/SDL_timer.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/SDL_timer.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -115,13 +115,13 @@ build/SDL_timer.lo: \
   /usr/local/include/runetype.h /usr/local/include/inttypes.h \
   /usr/local/include/math.h /usr/local/include/float.h \
   include/SDL_error.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/SDL_timer_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/SDL_timer_c.h \
   include/SDL_atomic.h include/SDL_cpuinfo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../thread/SDL_systhread.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../thread/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../thread/SDL_systhread.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../thread/../SDL_internal.h \
   include/SDL_thread.h include/SDL_mutex.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../thread/SDL_thread_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../thread/pthread/SDL_systhread_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../thread/pthread/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/../thread/../SDL_error_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/timer/.././SDL_internal.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../thread/SDL_thread_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../thread/pthread/SDL_systhread_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../thread/pthread/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/../thread/../SDL_error_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/timer/.././SDL_internal.h

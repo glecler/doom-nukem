@@ -88,9 +88,7 @@ int	ft_triangulate_polygon_top(t_e_data *e_data)
 			ft_add_top_link(node, e_data);
 		node = node->next;
 	}
-	ft_clean_links(e_data->llist);
 	ft_init_llist_active(e_data->llist);
-	ft_update_map(e_data);
 	return (1);
 }
 
@@ -109,8 +107,6 @@ int	ft_triangulate_polygon_floor(t_e_data *e_data)
 			ft_add_floor_link(node, e_data);
 		node = node->next;
 	}
-	ft_clean_links(e_data->llist);
 	ft_init_llist_active(e_data->llist);
-	ft_update_map(e_data);
 	return (1);
 }

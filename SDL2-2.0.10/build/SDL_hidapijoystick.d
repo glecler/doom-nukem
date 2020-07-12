@@ -1,9 +1,9 @@
 build/SDL_hidapijoystick.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapijoystick.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapijoystick.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -117,10 +117,10 @@ build/SDL_hidapijoystick.lo: \
   include/SDL_hints.h include/SDL_log.h include/SDL_mutex.h \
   include/SDL_error.h include/SDL_thread.h include/SDL_atomic.h \
   include/SDL_timer.h include/SDL_joystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../SDL_sysjoystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../SDL_joystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapijoystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../hidapi/hidapi/hidapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../SDL_sysjoystick.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../SDL_joystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapijoystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../hidapi/hidapi/hidapi.h \
   /usr/local/include/os/availability.h /usr/local/include/sys/qos.h \
   /usr/local/include/mach/mach.h /usr/local/include/mach/std_types.h \
   /usr/local/include/mach/boolean.h \

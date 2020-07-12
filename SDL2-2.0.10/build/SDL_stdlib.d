@@ -1,9 +1,9 @@
 build/SDL_stdlib.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/stdlib/SDL_stdlib.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/stdlib/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/stdlib/../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/stdlib/SDL_stdlib.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/stdlib/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/stdlib/../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/stdlib/../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/stdlib/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -114,5 +114,5 @@ build/SDL_stdlib.lo: \
   /usr/local/include/ctype.h /usr/local/include/_ctype.h \
   /usr/local/include/runetype.h /usr/local/include/inttypes.h \
   /usr/local/include/math.h /usr/local/include/float.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/stdlib/../libm/math_libm.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/stdlib/../libm/../SDL_internal.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/stdlib/../libm/math_libm.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/stdlib/../libm/../SDL_internal.h

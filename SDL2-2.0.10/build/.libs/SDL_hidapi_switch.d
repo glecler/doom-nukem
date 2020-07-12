@@ -1,9 +1,9 @@
 build/SDL_hidapi_switch.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapi_switch.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapi_switch.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -121,7 +121,7 @@ build/SDL_hidapi_switch.lo: \
   include/SDL_mouse.h include/SDL_joystick.h \
   include/SDL_gamecontroller.h include/SDL_quit.h include/SDL_gesture.h \
   include/SDL_touch.h include/SDL_timer.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../SDL_sysjoystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../SDL_joystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapijoystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/joystick/hidapi/../../hidapi/hidapi/hidapi.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../SDL_sysjoystick.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../SDL_joystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/SDL_hidapijoystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/joystick/hidapi/../../hidapi/hidapi/hidapi.h

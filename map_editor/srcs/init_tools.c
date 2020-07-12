@@ -41,7 +41,8 @@ int		ft_init_textures(t_win_data *w_data)
 	return (0);
 }
 
-int		ft_init_e_data(t_e_data *e_data, t_win_data *w_data, t_list *list, t_llist *llist)
+int		ft_init_editor_data(t_e_data *e_data, t_win_data *w_data,
+	t_list *list, t_llist *llist)
 {
 	e_data->win_data = w_data;
 	e_data->llist = llist;

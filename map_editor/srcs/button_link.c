@@ -5,9 +5,17 @@ int	ft_type(int type, int added_type)
 	if ((type == WALL && added_type == FLOOR) ||
 		(type == FLOOR && added_type == WALL))
 		type = FLOOR_WALL;
-	else if ((type == WALL && added_type == TOP))
+	else if ((type == WALL && added_type == TOP) ||
+		(type == TOP && added_type == WALL))
 		type = TOP_WALL;
-	else if (type == FLOOR_WALL && added_type == TOP)
+	else if ((type == FLOOR_WALL && added_type == TOP))
+		type = TOP_FLOOR_WALL;
+	else if ((type == FLOOR && added_type == TOP) ||
+		(type == TOP && added_type == FLOOR))
+		type = TOP_FLOOR;
+	else if (type == TOP_FLOOR && added_type == WALL)
+		type = TOP_FLOOR_WALL;
+	else if (type == TOP_WALL && added_type == FLOOR)
 		type = TOP_FLOOR_WALL;
 	return (type);
 }
@@ -16,6 +24,7 @@ int	ft_button_link_second_node(t_e_data *e_data, t_node_list *buff, int type)
 {
 	e_data->buff_link->node_b = buff;
 	e_data->buff_link->node_b->node.type = ft_type(buff->node.type, type);
+	buff->node.type = ft_type(buff->node.type, type);
 	ft_add_to_llist(*(e_data->buff_link), e_data->llist, type);
 	if (ft_intersect_all_llist(e_data->llist) == 0)
 		ft_big_pixel_img(e_data->win_data->addr,
@@ -37,6 +46,7 @@ int	ft_button_link_mode_wall(int button, int x, int y, t_e_data *e_data)
 	{
 		e_data->buff_link->node_a = buff;
 		e_data->buff_link->node_a->node.type = ft_type(buff->node.type, WALL);
+		buff->node.type = ft_type(buff->node.type, WALL);
 		ft_big_pixel_img(e_data->win_data->addr, buff->node,
 			e_data->win_data->rgb, e_data);
 		ft_display_map(e_data);
@@ -57,6 +67,7 @@ int	ft_button_link_mode_floor(int button, int x, int y, t_e_data *e_data)
 	{
 		e_data->buff_link->node_a = buff;
 		e_data->buff_link->node_a->node.type = ft_type(buff->node.type, FLOOR);
+		buff->node.type = ft_type(buff->node.type, FLOOR);
 		ft_big_pixel_img(e_data->win_data->addr, buff->node,
 			e_data->win_data->green, e_data);
 		ft_display_map(e_data);
@@ -79,6 +90,7 @@ int	ft_button_link_mode_top(int button, int x, int y, t_e_data *e_data)
 	{
 		e_data->buff_link->node_a = buff;
 		e_data->buff_link->node_a->node.type = ft_type(buff->node.type, TOP);
+		buff->node.type = ft_type(buff->node.type, TOP);
 		ft_big_pixel_img(e_data->win_data->addr, buff->node,
 			e_data->win_data->green, e_data);
 		ft_display_map(e_data);

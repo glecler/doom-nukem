@@ -1,9 +1,9 @@
 build/SDL_render.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/SDL_render.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/SDL_render.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -117,10 +117,10 @@ build/SDL_render.lo: \
   include/SDL_render.h include/SDL_rect.h include/SDL_error.h \
   include/SDL_pixels.h include/SDL_endian.h include/SDL_rwops.h \
   include/SDL_video.h include/SDL_surface.h include/SDL_blendmode.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/SDL_sysrender.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/SDL_sysrender.h \
   include/SDL_events.h include/SDL_keyboard.h include/SDL_keycode.h \
   include/SDL_scancode.h include/SDL_mouse.h include/SDL_joystick.h \
   include/SDL_gamecontroller.h include/SDL_quit.h include/SDL_gesture.h \
   include/SDL_touch.h include/SDL_mutex.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/SDL_yuv_sw_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/render/software/SDL_render_sw_c.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/SDL_yuv_sw_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/render/software/SDL_render_sw_c.h

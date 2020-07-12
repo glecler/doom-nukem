@@ -46,6 +46,16 @@ int	ft_int_type(int type1, int type2)
 {
 	if ((type1 == TOP && type2 == FLOOR) || (type1 == FLOOR && type2 == TOP))
 		return (1);
+	if ((type1 == FLOOR_WALL && type2 == TOP) || (type2 == FLOOR_WALL && type1 == TOP))
+		return (1);
+	if ((type1 == TOP && type2 == WALL) || (type2 == TOP && type1 == WALL))
+		return (1);
+	if ((type1 == TOP_WALL && type2 == FLOOR) || (type1 == TOP_WALL && type2 == FLOOR))
+		return (1);
+	if ((type1 == TOP_FLOOR && type2 == WALL) || (type1 == TOP_FLOOR && type2 == WALL))
+		return (1);
+	if ((type1 == WALL && type2 == FLOOR) || (type1 == FLOOR && type2 == WALL))
+		return (1);
 	return (0);
 }
 
@@ -64,9 +74,9 @@ int	ft_intersect_llist(t_segment buff, t_llist *llist)
 		if (ft_intersect(buff, llist_buff) == 1 && (buff.a.x != llist_buff.b.x
 			|| buff.a.y != llist_buff.b.y) && (buff.b.x != llist_buff.a.x
 				|| buff.b.y != llist_buff.a.y) && (buff.a.x != llist_buff.a.x
-					|| buff.a.y != llist_buff.a.y) && (buff.b.x !=
-						llist_buff.b.x || buff.b.y != llist_buff.b.y) &&
-							(ft_int_type(link->type, buff.type) == 0))
+					|| buff.a.y != llist_buff.a.y) && (buff.b.x != llist_buff.b.x
+						|| buff.b.y != llist_buff.b.y)
+							&& (ft_int_type(link->type, buff.type) == 0))
 			return (1);
 		link = link->next;
 	}

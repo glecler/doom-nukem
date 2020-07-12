@@ -1,6 +1,6 @@
 # sdl pkg-config source file
 
-prefix=/Users/gregoirelecler/Documents/42/doom-nukem/./libSDL2
+prefix=/Users/gregoirelecler/Documents/42/norme/./libSDL2
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

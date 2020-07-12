@@ -24,9 +24,11 @@ int		ft_link_to_triangle(t_tlist *tlist, t_e_data *e_data)
 
 int		ft_fill_tlist(t_tlist *tlist, t_e_data *e_data)
 {
-	if (!(ft_triangulate_polygon_floor(e_data)))
-		return (0);
+	
 	if (!(ft_triangulate_polygon_top(e_data)))
+		return (0);
+	ft_clean_links(e_data->llist);
+	if (!(ft_triangulate_polygon_floor(e_data)))
 		return (0);
 	if (!(ft_link_to_triangle(tlist, e_data)))
 		return (0);

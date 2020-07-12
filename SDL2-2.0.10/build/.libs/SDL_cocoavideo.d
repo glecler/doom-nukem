@@ -1,9 +1,9 @@
 build/SDL_cocoavideo.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoavideo.m \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoavideo.m \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -127,27 +127,27 @@ build/SDL_cocoavideo.lo: \
   include/SDL_messagebox.h include/SDL_power.h include/SDL_render.h \
   include/SDL_sensor.h include/SDL_shape.h include/SDL_system.h \
   include/SDL_timer.h include/SDL_version.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoavideo.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoavideo.h \
   include/SDL_opengl.h include/SDL_opengl_glext.h \
   /usr/local/include/os/availability.h /usr/local/include/sys/qos.h \
   /usr/local/include/xpc/xpc.h /usr/local/include/xpc/availability.h \
   /usr/local/include/mach/mig_strncpy_zerofill_support.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../SDL_sysvideo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../SDL_vulkan_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vk_platform.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_core.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_macos.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../SDL_sysvideo.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../SDL_vulkan_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vk_platform.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_core.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_macos.h \
   include/SDL_vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoaclipboard.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoaevents.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoakeyboard.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoamodes.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoamouse.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoaopengl.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoawindow.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../SDL_egl_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoaclipboard.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoaevents.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoakeyboard.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoamodes.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoamouse.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoaopengl.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoawindow.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../SDL_egl_c.h \
   include/SDL_egl.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoashape.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../SDL_shape_internals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoavulkan.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoashape.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../SDL_shape_internals.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoavulkan.h

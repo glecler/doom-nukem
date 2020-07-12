@@ -1,12 +1,12 @@
 build/SDL_dynapi.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/dynapi/SDL_dynapi.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/dynapi/SDL_dynapi.c \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
   /usr/local/include/AvailabilityInternal.h \
   /usr/local/include/TargetConditionals.h include/begin_code.h \
   include/close_code.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/dynapi/SDL_dynapi.h \
   include/SDL.h include/SDL_main.h include/SDL_stdinc.h \
   /usr/local/include/sys/types.h /usr/local/include/sys/appleapiopts.h \
   /usr/local/include/sys/cdefs.h \
@@ -127,5 +127,5 @@ build/SDL_dynapi.lo: \
   include/SDL_sensor.h include/SDL_shape.h include/SDL_system.h \
   include/SDL_timer.h include/SDL_version.h include/SDL_syswm.h \
   include/SDL_vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/dynapi/SDL_dynapi_procs.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/dynapi/SDL_dynapi_procs.h \
   /usr/local/include/dlfcn.h

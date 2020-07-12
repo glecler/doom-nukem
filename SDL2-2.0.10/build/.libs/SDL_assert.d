@@ -1,9 +1,9 @@
 build/SDL_assert.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/SDL_assert.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/./SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/SDL_assert.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/./SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -127,14 +127,14 @@ build/SDL_assert.lo: \
   include/SDL_messagebox.h include/SDL_power.h include/SDL_render.h \
   include/SDL_sensor.h include/SDL_shape.h include/SDL_system.h \
   include/SDL_timer.h include/SDL_version.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/SDL_assert_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_sysvideo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_vulkan_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/./khronos/vulkan/vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/./khronos/vulkan/vk_platform.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/./khronos/vulkan/vulkan_core.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/./khronos/vulkan/vulkan_macos.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/SDL_assert_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_sysvideo.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_vulkan_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/./khronos/vulkan/vulkan.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/./khronos/vulkan/vk_platform.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/./khronos/vulkan/vulkan_core.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/./khronos/vulkan/vulkan_macos.h \
   include/SDL_vulkan.h /usr/local/include/unistd.h \
   /usr/local/include/sys/unistd.h \
   /usr/local/include/sys/_types/_posix_vdisable.h \

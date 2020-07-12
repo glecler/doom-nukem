@@ -36,7 +36,7 @@ int	ft_set_rgb_type(unsigned char *rgb, int type, int dmode)
 		ft_set_rgb(rgb, 0, 165, 255);
 	else if ((type == TOP && (dmode == ALL || dmode == TOP))
 		|| (type == TOP_FLOOR_WALL && dmode == TOP) || (type ==
-		TOP_FLOOR && dmode == TOP) || (type == TOP_WALL && dmode == TOP))
+			TOP_FLOOR && dmode == TOP) || (type == TOP_WALL && dmode == TOP))
 		ft_set_rgb(rgb, 240, 0, 0);
 	else if (type == TOP_FLOOR && dmode == ALL)
 		ft_set_rgb(rgb, 254, 105, 180);

@@ -1,9 +1,7 @@
-file.c
+file.c OK
 init tools.c
-llist.c
-list.c
-tlist.c
+llist.c OK
+list.c OK
+tlist.c OK (add free)
 exportfile.c
 
-too many f:
-events , recursive, mode, button draw

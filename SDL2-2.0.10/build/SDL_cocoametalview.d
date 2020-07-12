@@ -1,11 +1,11 @@
 build/SDL_cocoametalview.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoametalview.m \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoametalview.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../SDL_sysvideo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoametalview.m \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoametalview.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../SDL_sysvideo.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -120,15 +120,15 @@ build/SDL_cocoametalview.lo: \
   include/SDL_rect.h include/SDL_error.h include/SDL_rwops.h \
   include/SDL_surface.h include/SDL_blendmode.h include/SDL_shape.h \
   include/SDL_thread.h include/SDL_atomic.h include/SDL_mutex.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../SDL_vulkan_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vk_platform.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_core.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_macos.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../SDL_vulkan_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vk_platform.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_core.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/.././khronos/vulkan/vulkan_macos.h \
   include/SDL_vulkan.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/SDL_cocoawindow.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/SDL_cocoawindow.h \
   /usr/local/include/os/availability.h /usr/local/include/sys/qos.h \
   /usr/local/include/xpc/xpc.h /usr/local/include/xpc/availability.h \
   /usr/local/include/mach/mig_strncpy_zerofill_support.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/cocoa/../SDL_egl_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/cocoa/../SDL_egl_c.h \
   include/SDL_egl.h include/SDL_assert.h

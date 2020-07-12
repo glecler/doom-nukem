@@ -1,9 +1,9 @@
 build/SDL_syshaptic.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/SDL_syshaptic.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/SDL_syshaptic.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -115,11 +115,11 @@ build/SDL_syshaptic.lo: \
   /usr/local/include/runetype.h /usr/local/include/inttypes.h \
   /usr/local/include/math.h /usr/local/include/float.h \
   include/SDL_haptic.h include/SDL_error.h include/SDL_joystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../SDL_syshaptic.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../joystick/SDL_sysjoystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../joystick/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../joystick/SDL_joystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../joystick/darwin/SDL_sysjoystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/../../joystick/darwin/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../SDL_syshaptic.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../joystick/SDL_sysjoystick.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../joystick/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../joystick/SDL_joystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../joystick/darwin/SDL_sysjoystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/../../joystick/darwin/../../SDL_internal.h \
   /usr/local/include/os/availability.h /usr/local/include/sys/qos.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/darwin/SDL_syshaptic_c.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/darwin/SDL_syshaptic_c.h

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-prefix=/Users/gregoirelecler/Documents/42/doom-nukem/./libSDL2
+prefix=/Users/gregoirelecler/Documents/42/norme/./libSDL2
 exec_prefix=${prefix}
 exec_prefix_set=no
 libdir=${exec_prefix}/lib

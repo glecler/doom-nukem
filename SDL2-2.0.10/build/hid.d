@@ -1,9 +1,9 @@
 build/hid.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/hidapi/mac/hid.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/hidapi/mac/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/hidapi/mac/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/hidapi/mac/hid.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/hidapi/mac/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/hidapi/mac/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/hidapi/mac/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/hidapi/mac/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -36,4 +36,4 @@ build/hid.lo: \
   /usr/local/include/sys/_types/_fd_zero.h \
   /usr/local/include/sys/_types/_fd_copy.h \
   /usr/local/include/sys/_select.h /usr/local/include/unistd.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/hidapi/hidapi/hidapi.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/hidapi/hidapi/hidapi.h

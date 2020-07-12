@@ -49,7 +49,6 @@ int			ft_clean_triangles(t_tlist *tlist)
 		}
 		tri = tri->next;
 	}
-	ft_print_tlist(tlist);
 	return (0);
 }
 

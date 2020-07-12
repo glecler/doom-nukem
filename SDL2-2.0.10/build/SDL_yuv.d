@@ -1,9 +1,9 @@
 build/SDL_yuv.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_yuv.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_yuv.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -117,8 +117,8 @@ build/SDL_yuv.lo: \
   include/SDL_video.h include/SDL_pixels.h include/SDL_rect.h \
   include/SDL_error.h include/SDL_rwops.h include/SDL_surface.h \
   include/SDL_blendmode.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_pixels_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_blit.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_pixels_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_blit.h \
   include/SDL_cpuinfo.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/SDL_yuv_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/video/yuv2rgb/yuv_rgb.h
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/SDL_yuv_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/video/yuv2rgb/yuv_rgb.h

@@ -1,9 +1,9 @@
 build/SDL_systhread.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/SDL_systhread.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/SDL_systhread.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
@@ -121,9 +121,9 @@ build/SDL_systhread.lo: \
   /usr/local/include/signal.h /usr/local/include/dlfcn.h \
   include/SDL_log.h include/SDL_thread.h include/SDL_atomic.h \
   include/SDL_mutex.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../SDL_thread_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../pthread/SDL_systhread_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../../SDL_error_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../.././SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/thread/pthread/../SDL_systhread.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../SDL_thread_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../pthread/SDL_systhread_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../../SDL_error_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../.././SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/thread/pthread/../SDL_systhread.h \
   include/SDL_assert.h

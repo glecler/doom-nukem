@@ -1,15 +1,15 @@
 build/SDL_haptic.lo: \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/SDL_haptic.c \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/../SDL_internal.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/../dynapi/SDL_dynapi.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/SDL_haptic.c \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/../dynapi/SDL_dynapi.h \
   /usr/local/include/TargetConditionals.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/../dynapi/SDL_dynapi_overrides.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/../dynapi/SDL_dynapi_overrides.h \
   include/SDL_config.h include/SDL_platform.h \
   /usr/local/include/AvailabilityMacros.h \
   /usr/local/include/Availability.h \
   /usr/local/include/AvailabilityInternal.h include/begin_code.h \
   include/close_code.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/SDL_syshaptic.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/SDL_syshaptic.h \
   include/SDL_haptic.h include/SDL_stdinc.h \
   /usr/local/include/sys/types.h /usr/local/include/sys/appleapiopts.h \
   /usr/local/include/sys/cdefs.h \
@@ -117,7 +117,7 @@ build/SDL_haptic.lo: \
   /usr/local/include/runetype.h /usr/local/include/inttypes.h \
   /usr/local/include/math.h /usr/local/include/float.h \
   include/SDL_error.h include/SDL_joystick.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/SDL_haptic_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/../joystick/SDL_joystick_c.h \
-  /Users/gregoirelecler/Documents/42/doom-nukem/SDL2-2.0.10/src/haptic/../joystick/../SDL_internal.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/SDL_haptic_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/../joystick/SDL_joystick_c.h \
+  /Users/gregoirelecler/Documents/42/norme/SDL2-2.0.10/src/haptic/../joystick/../SDL_internal.h \
   include/SDL_assert.h

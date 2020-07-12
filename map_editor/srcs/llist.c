@@ -26,6 +26,16 @@ void	ft_delete_link(t_link_list *link, t_llist *llist)
 	}
 }
 
+int		ft_set_link_list(t_link_list *buff, t_link link, int type)
+{
+	buff->link = link;
+	buff->active = 0;
+	buff->type = type;
+	buff->next = NULL;
+	buff->prev = NULL;
+	return (0);
+}
+
 int		ft_add_to_llist(t_link link, t_llist *llist, int type)
 {
 	t_link_list *buff;
@@ -35,11 +45,7 @@ int		ft_add_to_llist(t_link link, t_llist *llist, int type)
 	{
 		if (!(buff = (t_link_list*)malloc(sizeof(t_link_list))))
 			ft_error(FAILED_NODE_ALLOC);
-		buff->link = link;
-		buff->active = 0;
-		buff->type = type;
-		buff->next = NULL;
-		buff->prev = NULL;
+		ft_set_link_list(buff, link, type);
 		llist->first = buff;
 		return (0);
 	}
@@ -47,10 +53,7 @@ int		ft_add_to_llist(t_link link, t_llist *llist, int type)
 		buff = buff->next;
 	if (!(buff->next = (t_link_list*)malloc(sizeof(t_link_list))))
 		ft_error(FAILED_LINK_ALLOC);
-	buff->next->link = link;
-	buff->next->active = 0;
-	buff->next->type = type;
-	buff->next->next = NULL;
+	ft_set_link_list(buff->next, link, type);
 	buff->next->prev = buff;
 	buff->next->prev->next = buff->next;
 	return (0);

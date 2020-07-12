@@ -201,17 +201,17 @@ int 		ft_map_edit(t_win_data *w_data, t_list *list);
 
 int			ft_set_rgb_type(unsigned char *rgb, int type, int dmode);
 int 		ft_draw_axis(char *addr, unsigned char *rgb, int size_line);
-int 		ft_update_map(t__data *e_data);
-int			ft_display_map(t__data *e_data);
+int 		ft_update_map(t_e_data *e_data);
+int			ft_display_map(t_e_data *e_data);
 
 /*
 ** graphics_tools.c
 */
 
-int			ft_big_pixel_img(char *addr, t_node node, unsigned char *rgb, t__data *e_data);
+int			ft_big_pixel_img(char *addr, t_node node, unsigned char *rgb, t_e_data *e_data);
 int			ft_put_pixel_img(char *addr, int x, int y, unsigned char *rgb);
-void 		ft_put_line_vert(t_node a, t_node b, char *addr, t__data *data);
-void 		ft_put_line_img(t_node a, t_node b, char *addr, t__data *data);
+void 		ft_put_line_vert(t_node a, t_node b, char *addr, t_e_data *data);
+void 		ft_put_line_img(t_node a, t_node b, char *addr, t_e_data *data);
 void		ft_flush_img(char **addr);
 
 /*
@@ -220,8 +220,8 @@ void		ft_flush_img(char **addr);
 
 int    		ft_add_to_list(t_node node, t_list *list);
 void		ft_delete_node(t_node_list *node, t_list *list);
-int			ft_print_list(t_list *list);
 int			ft_free_list(t_list *list);
+int			ft_set_node_list(t_node node, t_node_list *buff);
 
 /*
 ** llist.c
@@ -229,19 +229,25 @@ int			ft_free_list(t_list *list);
 
 void    	ft_delete_link(t_link_list *link, t_llist *llist);
 int    		ft_add_to_llist(t_link link, t_llist *llist, int type);
-int 		ft_print_llist(t_llist *llist);
 int 		ft_free_llist(t_llist *llist);
+int			ft_set_link_list(t_link_list *buff, t_link link, int type);
 
 /*
 ** events.c
 */
 
-int			ft_get_motion(int x, int y, t__data *e_data);
-int 		ft_get_mouse(int button, int x, int y, t__data *e_data);
-int			ft_tool_choose_mode(int button, int x, int y, t__data *e_data);
-int			ft_draw_choose_mode(int button, int x, int y, t__data *e_data);
-int			ft_menu_choose_mode(int x, int y, t__data *e_data);
-int			ft_get_key(int key, t__data *e_data);
+int			ft_get_motion(int x, int y, t_e_data *e_data);
+int 		ft_get_mouse(int button, int x, int y, t_e_data *e_data);
+int			ft_get_key(int key, t_e_data *e_data);
+
+/*
+** choose_mode.c
+*/
+
+int			ft_tool_choose_mode(int button, int x, int y, t_e_data *e_data);
+int			ft_draw_choose_mode(int button, int x, int y, t_e_data *e_data);
+int			ft_menu_choose_mode(int x, int y, t_e_data *e_data);
+int			ft_banner_choose(int tex, int x, int type, t_e_data *e_data);
 
 /*
 ** tools.c
@@ -259,14 +265,14 @@ t_link		ft_set_link(t_node_list *a, t_node_list *b);
 int			ft_delete_last_link(t_llist *llist);
 int			ft_delete_links_node(t_node_list *buff, t_llist *llist);
 t_node_list *ft_last_node(t_list *list);
-t_node_list	*ft_selected_node(int x, int y, t__data *e_data);
+t_node_list	*ft_selected_node(int x, int y, t_e_data *e_data);
 
 /*
 ** init_tools.c
 */
 
 int     	ft_init_win_data(t_win_data *win_data);
-int 		ft_init__data(t__data *_data, t_win_data *w_data, t_list *list, t_llist *llist);
+int 		ft_init_editor_data(t_e_data *_data, t_win_data *w_data, t_list *list, t_llist *llist);
 void		ft_set_rgb(unsigned char *rgb, int r, int g, int b);
 t_node		ft_set_node(t_node node, int x, int y, int z);
 int 		ft_init_textures(t_win_data *w_data);
@@ -285,71 +291,76 @@ int 		ft_on_segment(t_node x, t_node y, t_node z);
 ** button_draw.c
 */
 
-int			ft_button_draw_mode_wall(int button, int x, int y, t__data *e_data);
-int			ft_button_draw_mode_floor(int button, int x, int y, t__data *e_data);
-int 		ft_button_draw_mode_right_click(int x, int y, t__data *e_data, int type);
-int 		ft_button_draw_mode_left_click(int x, int y, t__data *e_data, int type);
+int			ft_button_draw_mode_wall(int button, int x, int y, t_e_data *e_data);
+int			ft_button_draw_mode_floor(int button, int x, int y, t_e_data *e_data);
+int			ft_button_draw_mode_top(int button, int x, int y, t_e_data *e_data);
+
+/*
+** draw_mode_clic.c
+*/
+
+int			ft_but_d_mode_rgt_clk(int x, int y, t_e_data *e_data, int type);
+int			ft_but_d_mode_lft_clk(int x, int y, t_e_data *e_data, int type);
+int			ft_but_d_mode_lft_clkn(int x, int y, t_e_data *e_data, int type);
 
 /*
 ** button_select.c
 */
 
-int 		ft_button_select_mode(int button, int x, int y, t__data *e_data);
-int 		ft_button_select_mode_node(t__data *e_data);
-int 		ft_button_select_mode_none(int x, int y, t__data *e_data);
+int 		ft_button_select_mode(int button, int x, int y, t_e_data *e_data);
+int 		ft_button_select_mode_node(t_e_data *e_data);
+int 		ft_button_select_mode_none(int x, int y, t_e_data *e_data);
 
 /*
 ** button_erase.c
 */
 
-int 		ft_button_erase_mode(int button, int x, int y, t__data *e_data);
+int 		ft_button_erase_mode(int button, int x, int y, t_e_data *e_data);
 
 /*
 ** button_link.c
 */
 
 int 		ft_type(int type, int added_type);
-int 		ft_button_link_second_node(t__data *e_data, t_node_list *buff, int type);
-int 		ft_button_link_mode_top(int button, int x, int y, t__data *e_data);
-int			ft_button_link_mode_wall(int button, int x, int y, t__data *e_data);
-int			ft_button_link_mode_floor(int button, int x, int y, t__data *e_data);
+int 		ft_button_link_second_node(t_e_data *e_data, t_node_list *buff, int type);
+int 		ft_button_link_mode_top(int button, int x, int y, t_e_data *e_data);
+int			ft_button_link_mode_wall(int button, int x, int y, t_e_data *e_data);
+int			ft_button_link_mode_floor(int button, int x, int y, t_e_data *e_data);
 
 /*
 ** mode.c
 */
 
-int			ft_tool_interact(int x, int y, t__data *e_data);
-int 		ft_banner_interact(int x, int y, t__data *e_data);
-int			ft_link_interact(int x, int y, t__data *e_data);
-int 		ft_mode_interact(int x, int y, t__data *e_data);
-int 		ft_file_interact(int x, int y, t__data *e_data);
-int			ft_banner_choose(int tex, int x, int type, t__data *e_data);
+int			ft_tool_interact(int x, int y, t_e_data *e_data);
+int 		ft_banner_interact(int x, int y, t_e_data *e_data);
+int			ft_link_interact(int x, int y, t_e_data *e_data);
+int 		ft_mode_interact(int x, int y, t_e_data *e_data);
+int 		ft_file_interact(int x, int y, t_e_data *e_data);
 
 /*
 ** motion.c
 */
 
-int			ft_motion_select_mode(int x, int y, t__data *e_data);
-int 		ft_motion_draw_mode(int x, int y, t__data *e_data, int type);
-int 		ft_motion_z_mode(int y, t__data *e_data);
+int			ft_motion_select_mode(int x, int y, t_e_data *e_data);
+int 		ft_motion_draw_mode(int x, int y, t_e_data *e_data, int type);
+int 		ft_motion_z_mode(int y, t_e_data *e_data);
 
 /*
 ** file.c
 */ 
 
-int			ft_new_file(t__data *e_data);
-int 		ft_export_file(t__data *e_data);
-int 		ft_clean_links(t_llist *llist);
-int 		ft_node_from_node(t_node_list *node, t_node_list *goal, t__data *e_data);
-int			ft_export_data_to_save(t__data *e_data, int fd);
+int			ft_new_file(t_e_data *e_data);
+int 		ft_export_file(t_e_data *e_data);
+int			ft_export_data_to_save(t_e_data *e_data, int fd);
+char		*ft_join_mtl(char *data);
 
 /*
 ** triangle.c
 */
 
-int 		ft_link_to_triangle(t_tlist *tlist, t__data *e_data);
-int 		ft_fill_tlist(t_tlist *tlist, t__data *e_data);
-t_tlist		*ft_create_triangles(t__data *e_data);
+int 		ft_link_to_triangle(t_tlist *tlist, t_e_data *e_data);
+int 		ft_fill_tlist(t_tlist *tlist, t_e_data *e_data);
+t_tlist		*ft_create_triangles(t_e_data *e_data);
 
 /*
 ** triangle_tools.c
@@ -365,18 +376,20 @@ int 		ft_init_llist_active(t_llist *llist);
 ** triangulate.c
 */
 
-int			ft_add_top_link(t_node_list *node, t__data *e_data);
-int			ft_add_floor_link(t_node_list *node, t__data *e_data);
-int 		ft_triangulate_polygon_top(t__data *e_data);
-int 		ft_triangulate_polygon_floor(t__data *e_data);
+int			ft_add_top_link(t_node_list *node, t_e_data *e_data);
+int			ft_add_floor_link(t_node_list *node, t_e_data *e_data);
+int 		ft_triangulate_polygon_top(t_e_data *e_data);
+int 		ft_triangulate_polygon_floor(t_e_data *e_data);
+int 		ft_node_from_node(t_node_list *node, t_node_list *goal, t_e_data *e_data);
 
 /*
 ** recursive_triangle.c
 */
 
-int			ft_add_triangle_top(t_node_list *node, t_link_list *buff, int no[4], t__data *e_data);
-int 		ft_triangle_from_node_floor(t_node_list *node, int vertex, t__data *e_data, int no[4]);
-int 		ft_triangle_from_node_top(t_node_list *node, int vertex, t__data *e_data, int no[4]);
+int			ft_add_triangle_floor(t_node_list *node, t_link_list *buff,	int no[4], t_e_data *e_data);
+int			ft_add_triangle_top(t_node_list *node, t_link_list *buff, int no[4], t_e_data *e_data);
+int 		ft_triangle_from_node_floor(t_node_list *node, int vertex, t_e_data *e_data, int no[4]);
+int 		ft_triangle_from_node_top(t_node_list *node, int vertex, t_e_data *e_data, int no[4]);
 
 /*
 ** tlist.c
@@ -385,38 +398,67 @@ int 		ft_triangle_from_node_top(t_node_list *node, int vertex, t__data *e_data, 
 int		    ft_add_to_tlist(t_triangle triangle, t_tlist *tlist, int tex);
 int 		ft_print_tlist(t_tlist *tlist);
 void   	 	ft_delete_triangle(t_triangle_list *triangle, t_tlist *tlist);
+int			ft_set_triangle_list(t_triangle triangle, int tex, t_triangle_list *buff);
+int			ft_free_tlist(t_tlist *tlist);
 
 /*
 ** button_z.c
 */
 
-int 		ft_button_mod_z_none(int x, int y, int button, t__data *e_data);
-int 		ft_button_z_mode(int x, int y, int button, t__data *e_data);
+int 		ft_button_mod_z_none(int x, int y, int button, t_e_data *e_data);
+int 		ft_button_z_mode(int x, int y, int button, t_e_data *e_data);
 
 /*
 ** clean_links.c
 */
 
 int			ft_clean_links(t_llist *llist);
-int 		ft_delete_3_links(t_link_list *link, t_link_list *buff, t_llist *llist);
-int 		ft_delete_1_links(t_link_list *link, t_link_list *buff, t_llist *llist);
-int 		ft_delete_2_links(t_link_list *link, t_link_list *buff, t_llist *llist);
 int 		ft_delete_link_type(t_link_list *link, t_link_list *buff, t_llist *llist);
 
 /*
 ** export_file.c
 */
 
-char 		*ft_export_v(t__data *e_data, char *data);
-char 		*ft_export_walls(t__data *e_data, char *data);
-char 		*ft_export_floor_top(t__data *e_data, char *data);
+char 		*ft_export_v(t_e_data *e_data, char *data);
+char 		*ft_export_walls(t_e_data *e_data, char *data);
+char 		*ft_export_floor_top(t_e_data *e_data, char *data);
+char		*ft_xpm_tex(int tex_code);
 
 /*
 ** button_texture.c
 */
 
-int 		ft_choose_texture(int button, int x, int y, t__data *e_data);
-int 		ft_button_textures(int button, int x, int y, t__data *e_data);
+int 		ft_choose_texture(int x, int y, t_e_data *e_data);
+int 		ft_button_textures(int button, int x, int y, t_e_data *e_data);
+int 		ft_type_display(int type, int dmode);
+t_link_list	*ft_selected_link(t_e_data *e_data);
+
+/*
+** tex_choose.c
+*/
+
+int			ft_assign_tex_tri(int *tex, t_link_list *link);
+int			ft_tex_choose_tri_floor(t_e_data *e_data);
+int			ft_tex_choose_tri_top(t_e_data *e_data);
+
+/*
+** delete_links.c
+*/
+
+int			ft_delete_4_links(t_link_list *link, t_link_list *buff, t_llist *llist);
+int			ft_delete_5_links(t_link_list *link, t_link_list *buff, t_llist *llist);
+int 		ft_delete_3_links(t_link_list *link, t_link_list *buff, t_llist *llist);
+int 		ft_delete_1_links(t_link_list *link, t_link_list *buff, t_llist *llist);
+int 		ft_delete_2_links(t_link_list *link, t_link_list *buff, t_llist *llist);
+
+/*
+** wall_strjoin.c
+*/
+
+char		*ft_wall_strjoin1(t_link_list *link_buff, char *data);
+char		*ft_wall_strjoin2(t_link_list *link_buff, char *data);
+char		*ft_tri_strjoin(t_triangle_list *t_buff, char *data);
+
 
 
 #endif
