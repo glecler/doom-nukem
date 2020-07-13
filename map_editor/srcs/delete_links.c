@@ -50,12 +50,14 @@ int	ft_delete_3_links(t_link_list *link, t_link_list *buff, t_llist *llist)
 	{
 		link->type = TOP_FLOOR;
 		ft_delete_link(buff, llist);
+		return (1);
 	}
 	else if ((buff->type == FLOOR_WALL && link->type == FLOOR) ||
 		(buff->type == FLOOR && link->type == FLOOR_WALL))
 	{
 		link->type = FLOOR_WALL;
 		ft_delete_link(buff, llist);
+		return (1);
 	}
 	return (0);
 }

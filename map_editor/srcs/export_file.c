@@ -95,5 +95,6 @@ char	*ft_export_floor_top(t_e_data *e_data, char *data)
 		data = ft_tri_strjoin(t_buff, data);
 		t_buff = t_buff->next;
 	}
+	ft_free_tlist(tlist);
 	return (data);
 }
