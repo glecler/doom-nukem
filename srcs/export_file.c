@@ -80,8 +80,7 @@ char	*ft_export_walls(t_e_data *e_data, char *data)
 			data = ft_strjoin(data, "o newobject\n");
 			data = ft_strjoin(data, "usemtl ");
 			data = ft_strjoin(data, ft_xpm_tex(link_buff->link.wall_tex));
-			data = ft_strjoin(data, "s 1\n");
-			data = ft_strjoin(data, "id 8\n");
+			data = ft_strjoin(data, "\nid 9\n");
 			data = ft_wall_strjoin1(link_buff, data);
 			data = ft_wall_strjoin2(link_buff, data);
 		}
@@ -102,8 +101,7 @@ char	*ft_export_floor_top(t_e_data *e_data, char *data)
 		data = ft_strjoin(data, "o newobject\n");
 		data = ft_strjoin(data, "usemtl ");
 		data = ft_strjoin(data, ft_xpm_tex(t_buff->triangle.tex));
-		data = ft_strjoin(data, "s 1\n");
-		data = ft_strjoin(data, "id 7\n");
+		data = ft_strjoin(data, "\nid 8\n");
 		data = ft_tri_strjoin(t_buff, data);
 		t_buff = t_buff->next;
 	}
