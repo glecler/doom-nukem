@@ -251,6 +251,7 @@ int				ft_set_link_list(t_link_list *buff, t_link link, int type);
 int				ft_get_motion(int x, int y, t_e_data *e_data);
 int				ft_get_mouse(int button, int x, int y, t_e_data *e_data);
 int				ft_get_key(int key, t_e_data *e_data);
+int				ft_exit_hook(int x, int y, t_e_data *e_data);
 
 /*
 ** choose_mode.c

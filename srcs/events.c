@@ -12,6 +12,15 @@
 
 #include "../includes/doom_editor.h"
 
+int	ft_exit_hook(int x, int y, t_e_data *e_data)
+{
+	x = 0;
+	y = 0;
+	e_data = NULL;
+	exit(0);
+	return (0);
+}
+
 int	ft_get_mouse(int button, int x, int y, t_e_data *e_data)
 {
 	if (y < 42)

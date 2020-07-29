@@ -62,6 +62,7 @@ int		ft_init_editor_data(t_e_data *e_data, t_win_data *w_data,
 	e_data->win_data = w_data;
 	e_data->llist = llist;
 	e_data->list = list;
+	e_data->tlist = NULL;
 	e_data->mode = NONE;
 	e_data->select_state = SELECT_NONE;
 	e_data->draw_state = DRAW_NONE;

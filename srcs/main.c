@@ -29,6 +29,7 @@ int	ft_map_edit(t_win_data *w_data, t_list *list)
 	mlx_mouse_hook(w_data->win_ptr, &ft_get_mouse, &editor_data);
 	mlx_hook(w_data->win_ptr, 6, (1L << 6), &ft_get_motion, &editor_data);
 	mlx_key_hook(w_data->win_ptr, &ft_get_key, &editor_data);
+	mlx_hook(w_data->win_ptr, 17, 0L, &ft_exit_hook, &editor_data);
 	mlx_loop(w_data->mlx_ptr);
 	return (0);
 }
