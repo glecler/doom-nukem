@@ -19,20 +19,20 @@ char	*ft_export_v(t_e_data *e_data, char *data)
 	buff = e_data->list->first;
 	while (buff)
 	{
-		data = ft_strjoin(data, "v ");
-		data = ft_strjoin(data, ft_itoa(buff->node.x / 5));
-		data = ft_strjoin(data, " ");
-		data = ft_strjoin(data, ft_itoa(buff->node.z / 5));
-		data = ft_strjoin(data, " ");
-		data = ft_strjoin(data, ft_itoa(buff->node.y / 5));
-		data = ft_strjoin(data, "\n");
-		data = ft_strjoin(data, "v ");
-		data = ft_strjoin(data, ft_itoa(buff->node.x / 5));
-		data = ft_strjoin(data, " ");
-		data = ft_strjoin(data, ft_itoa(buff->node.z / 5 + 20));
-		data = ft_strjoin(data, " ");
-		data = ft_strjoin(data, ft_itoa(buff->node.y / 5));
-		data = ft_strjoin(data, "\n");
+		data = ft_strjoin_free_s1(data, "v ");
+		data = ft_strjoin_free_s1s2(data, ft_itoa(buff->node.x / 5));
+		data = ft_strjoin_free_s1(data, " ");
+		data = ft_strjoin_free_s1s2(data, ft_itoa(buff->node.z / 5));
+		data = ft_strjoin_free_s1(data, " ");
+		data = ft_strjoin_free_s1s2(data, ft_itoa(buff->node.y / 5));
+		data = ft_strjoin_free_s1(data, "\n");
+		data = ft_strjoin_free_s1(data, "v ");
+		data = ft_strjoin_free_s1s2(data, ft_itoa(buff->node.x / 5));
+		data = ft_strjoin_free_s1(data, " ");
+		data = ft_strjoin_free_s1s2(data, ft_itoa(buff->node.z / 5 + 20));
+		data = ft_strjoin_free_s1(data, " ");
+		data = ft_strjoin_free_s1s2(data, ft_itoa(buff->node.y / 5));
+		data = ft_strjoin_free_s1(data, "\n");
 		buff = buff->next;
 	}
 	return (data);
@@ -77,10 +77,11 @@ char	*ft_export_walls(t_e_data *e_data, char *data)
 		if (link_buff->type == WALL || link_buff->type == FLOOR_WALL
 			|| link_buff->type == TOP_FLOOR_WALL || link_buff->type == TOP_WALL)
 		{
-			data = ft_strjoin(data, "o newobject\n");
-			data = ft_strjoin(data, "usemtl ");
-			data = ft_strjoin(data, ft_xpm_tex(link_buff->link.wall_tex));
-			data = ft_strjoin(data, "\nid 9\n");
+			data = ft_strjoin_free_s1(data, "o newobject\n");
+			data = ft_strjoin_free_s1(data, "usemtl ");
+			data = ft_strjoin_free_s1s2(data,
+				ft_xpm_tex(link_buff->link.wall_tex));
+			data = ft_strjoin_free_s1(data, "\nid 9\n");
 			data = ft_wall_strjoin1(link_buff, data);
 			data = ft_wall_strjoin2(link_buff, data);
 		}
@@ -98,10 +99,10 @@ char	*ft_export_floor_top(t_e_data *e_data, char *data)
 	t_buff = tlist->first;
 	while (t_buff)
 	{
-		data = ft_strjoin(data, "o newobject\n");
-		data = ft_strjoin(data, "usemtl ");
-		data = ft_strjoin(data, ft_xpm_tex(t_buff->triangle.tex));
-		data = ft_strjoin(data, "\nid 8\n");
+		data = ft_strjoin_free_s1(data, "o newobject\n");
+		data = ft_strjoin_free_s1(data, "usemtl ");
+		data = ft_strjoin_free_s1s2(data, ft_xpm_tex(t_buff->triangle.tex));
+		data = ft_strjoin_free_s1(data, "\nid 8\n");
 		data = ft_tri_strjoin(t_buff, data);
 		t_buff = t_buff->next;
 	}

@@ -70,6 +70,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
-long double    ft_abs(long double i);
-int			get_next_line(const int fd, char **line);
+int		get_next_line(const int fd, char **line);
+char	*ft_strjoin_free_s1(char *s1, char *s2);
+char	*ft_strjoin_free_s1s2(char *s1, char *s2);
+
 #endif

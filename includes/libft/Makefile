@@ -67,7 +67,8 @@ SOURCE = ./ft_memset.c \
 		./ft_strjoin.c \
 		./ft_strtrim.c \
 		./get_next_line.c \
-		./ft_abs.c
+		./ft_strjoin_free_s1.c \
+		./ft_strjoin_free_s1s2.c
 
 CC 	= clang
 	CL=\x1b[35m
