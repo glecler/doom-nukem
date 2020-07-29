@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   graphics_tools.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glecler <glecler@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/30 17:28:06 by glecler           #+#    #+#             */
+/*   Updated: 2019/12/02 14:50:19 by glecler          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/doom_editor.h"
 
-int     ft_big_pixel_img(char *addr, t_node node, unsigned char *rgb, t_editor_data *e_data)
+int		ft_big_pixel_img(char *addr, t_node node,
+	unsigned char *rgb, t_e_data *e_data)
 {
-	int x_buff;
-	int y_buff;
+	int	x_buff;
+	int	y_buff;
 
 	x_buff = node.x - 10;
 	y_buff = node.y - 10;
@@ -12,7 +25,7 @@ int     ft_big_pixel_img(char *addr, t_node node, unsigned char *rgb, t_editor_d
 		while (y_buff < node.y + 10)
 		{
 			y_buff++;
-			ft_put_pixel_img(addr, x_buff, (y_buff - node.z) *
+			ft_put_pixel_img(addr, x_buff, y_buff *
 				e_data->win_data->size_line, rgb);
 		}
 		y_buff = node.y - 10;
@@ -35,17 +48,17 @@ int		ft_put_pixel_img(char *addr, int x, int y, unsigned char *rgb)
 	char	*cpy;
 
 	cpy = addr;
-    if (x > 1000 || y > 3200000 || x < 0 || y < 42)
-        return (0);
+	if (x > 1000 || y > 3200000 || x < 0 || y < 42)
+		return (0);
 	addr += y + x * 4;
 	*(addr) = rgb[0];
-    *(addr + 1) = rgb[1];
-    *(addr + 2) = rgb[2];
-    addr = cpy;
+	*(addr + 1) = rgb[1];
+	*(addr + 2) = rgb[2];
+	addr = cpy;
 	return (1);
 }
 
-void    ft_put_line_vert(t_node a, t_node b, char *addr, t_editor_data *data)
+void	ft_put_line_vert(t_node a, t_node b, char *addr, t_e_data *data)
 {
 	double y;
 	double x;
@@ -54,41 +67,41 @@ void    ft_put_line_vert(t_node a, t_node b, char *addr, t_editor_data *data)
 	coeff = 0;
 	y = 0;
 	x = a.x;
-	if (a.y - a.z > b.y - b.z)
+	if (a.y > b.y)
 		ft_coord_swap(&a, &b);
-	if (b.y - b.z != a.y - a.z)
-		coeff = (b.x - a.x) / (b.y - b.z - a.y + a.z);
-	while (a.y + y  - a.z <= b.y - b.z)
+	if (b.y != a.y)
+		coeff = (b.x - a.x) / (b.y - a.y);
+	while (a.y + y <= b.y)
 	{
 		x = ceil(y * coeff) + a.x;
-        ft_put_pixel_img(addr, x, (a.y - a.z + y) *
+		ft_put_pixel_img(addr, x, (a.y + y) *
 			data->win_data->size_line, data->win_data->rgb);
-		ft_put_pixel_img(addr, x + 1, (a.y - a.z +  y) *
+		ft_put_pixel_img(addr, x + 1, (a.y + y) *
 			data->win_data->size_line, data->win_data->rgb);
 		y += 1;
 	}
 }
 
-void    ft_put_line_img(t_node a, t_node b, char *addr, t_editor_data *data)
+void	ft_put_line_img(t_node a, t_node b, char *addr, t_e_data *data)
 {
 	double	coeff;
 	double	x;
-	double		y;
+	double	y;
 	int		res;
 
-	y = a.y - a.z;
+	y = a.y;
 	x = 0;
-    coeff = 0;
+	coeff = 0;
 	if (b.x < a.x)
 		ft_coord_swap(&a, &b);
 	if (b.x != a.x)
-		coeff = (b.y - b.z - a.y + a.z) / (b.x - a.x);
+		coeff = (b.y - a.y) / (b.x - a.x);
 	if (b.x == a.x || fabs(coeff) > 1)
 		ft_put_line_vert(a, b, addr, data);
 	while ((a.x + x <= b.x) && fabs(coeff) <= 1)
 	{
-		y = ceil(x * coeff) + a.y - a.z;
-        res = ft_put_pixel_img(addr, a.x + x, y *
+		y = ceil(x * coeff) + a.y;
+		res = ft_put_pixel_img(addr, a.x + x, y *
 			data->win_data->size_line, data->win_data->rgb);
 		res = ft_put_pixel_img(addr, a.x + x, (y + 1) *
 			data->win_data->size_line, data->win_data->rgb);

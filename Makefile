@@ -1,41 +1,58 @@
 NAME 	= doom_editor
-SRC 	= ./srcs/main.c ./srcs/graphics.c \
-		./srcs/events.c ./srcs/tools.c \
-		./srcs/list.c ./srcs/intersect.c \
-		./srcs/button_link.c ./srcs/mode.c \
-		./srcs/motion.c ./srcs/file.c \
-		./srcs/llist.c ./srcs/init_tools.c \
-		./srcs/graphics_tools.c ./srcs/button_draw.c \
-		./srcs/button_erase.c ./srcs/button_select.c \
-		./srcs/link_tools.c ./srcs/tlist.c ./srcs/button_z.c \
-		./srcs/triangle.c ./srcs/triangulate.c ./srcs/triangle_tools.c \
-		./srcs/clean_links.c ./srcs/recursive_triangle.c \
-		./srcs/export_file.c
-		
-FLAGS 	= -Wall -Wextra -Wno-nullability-completeness
-CC		= clang
-	CL=\x1b[35m
-	GREEN=\033[1;32m
-	RED=\033[1;31m
-	CL2=\x1b[36m
-	NC=\033[0m
 
-all: $(NAME)
+CC = clang
+CFLAG = -Wall -Wextra -Werror -Wno-nullability-completeness
 
-$(NAME): $(SRC)
-	@$(MAKE) -C ./includes/libft
-	@$(CC) $(FLAGS) -lpthread -I minilibx_macos $(SRC) ./includes/libft/libft.a -L ./includes/minilibx_macos -lmlx -framework OpenGL -framework Appkit -o $(NAME)
-	@echo "$(GREEN)[✓]$(NC)$(CL) $(NAME) built$(NC)"
+SRC_PATH	= ./srcs/
+INC_PATH	= ./includes/
+OBJ_PATH	= ./obj/
+INC_MLX		= ./includes/minilibx_macos
+
+LFT_PATH	= ./includes/libft/
+LIBFT_FLAG	= -L$(LFT_PATH) -lft
+MLX_FLAGS	= -L$(INC_MLX) -lmlx -framework OpenGL -framework Appkit
+LIBFT		= $(LFT_PATH)libft.a
+INCLIBFT  	= $(LFT_PATH)includes
+
+OBJ_FILE = $(SRC_FILE:.c=.o)
+SRC_FILE = main.c graphics.c \
+		events.c tools.c \
+		list.c intersect.c \
+		button_link.c mode.c \
+		motion.c file.c \
+		llist.c init_tools.c \
+		graphics_tools.c button_draw.c \
+		button_erase.c button_select.c \
+		link_tools.c tlist.c \
+		triangle.c triangulate.c triangle_tools.c \
+		clean_links.c recursive_triangle.c \
+		export_file.c button_texture.c tex_choose.c \
+		delete_links.c choose_mode.c draw_mode_clic.c \
+		wall_strjoin.c intersect_all.c
+
+OBJ      = $(addprefix $(OBJ_PATH),$(OBJ_FILE))
+
+all: libft $(NAME)
+
+$(NAME): $(OBJ) $(LIBFT)
+		@$(CC) $(CFLAG) -lm $(LIBFT_FLAG) $(MLX_FLAGS) -o $@ $^
+
+$(OBJ_PATH)%.o: $(SRC_PATH)%.c Makefile includes/doom_editor.h
+		@mkdir -p $(OBJ_PATH)
+		@$(CC) $(CFLAG) -I $(INC_PATH) -I $(INCLIBFT) -I $(INC_MLX) -o $@ -c $<
+
+libft: $(LIBFT)
+
+$(LIBFT):   $(LFT_PATH)
+		@make -C $(LFT_PATH)
 
 clean:
-	@rm -rf $(OBJ)
-	@cd ./includes/libft && $(MAKE) clean
-	@echo "$(RED)[-]$(NC)$(CL2) Objects of $(NAME) cleaned$(NC)"
+	@make -C $(LFT_PATH) clean
+	@rm -rf $(OBJ_PATH)
 
 fclean: clean
-	@cd ./includes/libft && $(MAKE) fclean
+	@make -C $(LFT_PATH) fclean
 	@rm -rf $(NAME)
-	@echo "$(RED)[-]$(NC)$(CL2) $(NAME) cleaned$(NC)"
 
 re: fclean all
 
