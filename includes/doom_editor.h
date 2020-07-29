@@ -21,7 +21,6 @@
 # include <unistd.h>
 # include <sys/types.h>
 # include <sys/uio.h>
-# include "libft/ft_printf/srcs/ft_printf.h"
 # define NONE 0
 # define DRAW_WALL 1
 # define DRAW_FLOOR 2
