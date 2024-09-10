@@ -1,4 +1,4 @@
-# Doomukem Map Editor
+# DoomNukem Map Editor
 ## Introduction
 
 The **DoomNukem Map Editor** is a custom level editor for a Doom-like game engine built in C. It allows users to create maps for use within the game, including defining walls, floors, ceilings and textures. Inspired by the classic game **DOOM**, this editor provides a simple interface for designing complex maps.
