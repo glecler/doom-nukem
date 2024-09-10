@@ -3,7 +3,7 @@
 
 The **DoomNukem Map Editor** is a custom level editor for a Doom-like game engine built in C. It allows users to create maps for use within the game, including defining walls, floors, ceilings and textures. This project is my part of the DoomNukem project from 42. It was developped during the first quarentine of COVID-19.
 
-![DoomNukem Map Editor](assets/Screenshot\ 2024-09-10\ at\ 22.51.07.png)
+![DoomNukem Map Editor](assets/screenshot.png)
 
 ## Features
 
